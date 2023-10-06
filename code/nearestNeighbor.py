@@ -29,10 +29,10 @@ clf.fit(X_train, y_train)
 # Breite des Kelchblattes = 2,7
 # Länge des Kronblattes = 5,5
 # Breite des Kronblattes = 1,5
-clf.predict([[6.3, 2.7, 5.5, 1.5]])
+print(clf.predict([[6.3, 2.7, 5.5, 1.5]]))
 
 # Hier wird gemessen wie gut ein Satz von Features auf einen Satz von Labels passt 0(überhaupt nicht) 1(passt perfekt)
-clf.score(X_train, y_train)
+print(clf.score(X_train, y_train))
 
 # Dieser Wert gibt aus wie viel Prozent der Testdaten richtig vorhergesagt werden können
-clf.score(X_test, y_test)
+print(clf.score(X_test, y_test))
