@@ -1,5 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+import seaborn as sns
 
 # Einlesen der Iris Datensätze
 df = pd.read_csv('../datensätze/iris_dirty.csv',
@@ -77,4 +78,21 @@ print(df.groupby('class').describe())
 df.groupby('class').hist(figsize=(10, 10))
 #plt.show() # Anzeigen der Diagramme
 
+# Dies ist eine andere Darstellung der Histogramme 
+sns.jointplot([df['sepal length'], df['petal length']])
+#plt.show()
 
+# Nun korrigieren wir den ausreßenden Wert auf 5.8
+df.loc[143, 'sepal length'] = 5.8
+
+# Überprüfen ob die Korrektur Erfolgreich war
+sns.jointplot([df['sepal length'], df['petal length']])
+#plt.show()
+
+# Nun erzeugen wir eine Korrelationsmatrix, die einen dichten und schnellen Überblick über den Datensatz erzeugt
+corrmat = df.corr()
+sns.heatmap(corrmat, annot=True)
+#plt.show()
+
+# eine neue Datei speichern 
+df.to_csv('../datensätze/iri_clean.csv')
