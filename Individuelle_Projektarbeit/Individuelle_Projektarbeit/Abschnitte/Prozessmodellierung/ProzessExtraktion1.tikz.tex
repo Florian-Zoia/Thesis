@@ -1,0 +1,36 @@
+\tikzstyle{place}=[circle, thick, draw=blue!75, fill=blue!20, minimum size=10mm, node distance = 2.5cm]
+\tikzstyle{transition}=[rectangle, rounded corners, thick, draw=black!75, fill=black!20, minimum height=1cm, minimum width = 2.3cm, node distance = 2.5cm, align=left]
+
+\begin{scope}
+	\node [transition](get){Daten von\\Input};
+	
+	\node [place, right of=get] (p1){}
+		edge [pre, line width=1.5pt] (get);
+	
+	\node [transition, right of=p1](search1){Suche nach\\Buchungsanfrage}
+		edge [pre, line width=1.5pt] (p1); 
+	
+	\node [place, right of=search1](p2){}
+		edge [pre, line width=1.5pt] (search1);
+	
+%	\node [transition, right of=p2](check1){Prüfe ob '?'}
+%		edge [pre, line width=1.5pt] (p2);
+		
+	\node [place, right of=search1](p3){}
+		edge [pre, line width=1.5pt] (search1);
+		
+	\node [transition, right of=p3](search2){Suche nach\\Code}
+		edge [pre, line width=1.5pt] (p3);
+		
+	\node [place, below of=search2](p4){}
+		edge [pre, line width=1.5pt] (search2);
+		
+	\node [transition, left of=p4](check2){Prüfe Code}
+		edge [pre, line width=1.5pt] (p4);
+	
+	\node [place, left of=check2](p5){}
+		edge [pre, line width=1.5pt] (check2);
+	
+	\node [transition, left of=p5](last){NEXT STEP}
+		edge [pre, line width=1.5pt] (p5);
+\end{scope}

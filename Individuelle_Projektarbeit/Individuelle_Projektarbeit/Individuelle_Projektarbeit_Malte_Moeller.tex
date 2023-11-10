@@ -1,0 +1,256 @@
+\documentclass[hidelinks,12pt,a4paper]{article}
+\usepackage{rotating}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{here}
+\usepackage{listings} 
+\lstset{language=XML} 
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{tabularx}
+\usepackage{booktabs, multicol, multirow}
+\usepackage{rotating}
+\usepackage{bigstrut}
+\usepackage{svg}
+\usepackage{wrapfig}
+\usepackage{pdfpages} 
+\usepackage{floatflt}
+\usepackage{amsmath, amssymb}
+\usepackage[printonlyused]{acronym} 
+\usepackage{textcomp}
+\usepackage{url}
+\usepackage{caption}
+\usepackage[export]{adjustbox}
+\def\UrlBreaks{\do\/\do-}
+
+\clubpenalty10000
+\widowpenalty10000
+\displaywidowpenalty=10000
+
+
+\lstdefinelanguage{JavaScript}{
+	keywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break},
+	keywordstyle=\color{blue}\bfseries,
+	ndkeywords={class, export, boolean, throw, implements, import, this},
+	ndkeywordstyle=\color{darkgray}\bfseries,
+	identifierstyle=\color{black},
+	sensitive=false,
+	comment=[l]{//},
+	morecomment=[s]{/*}{*/},
+	commentstyle=\color{purple}\ttfamily,
+	stringstyle=\color{red}\ttfamily,
+	morestring=[b]',
+	morestring=[b]",
+	extendedchars=true,
+	basicstyle=\footnotesize\ttfamily,
+	showstringspaces=false,
+	showspaces=false,
+	numberstyle=\footnotesize,
+	numbersep=9pt,
+	numbers=left,
+	tabsize=2,
+	breaklines=true,
+	showtabs=false,
+	captionpos=b,
+	xleftmargin=20pt
+}
+
+\lstset{literate=%
+	{Ö}{{\"O}}1
+	{Ä}{{\"A}}1
+	{Ü}{{\"U}}1
+	{ß}{{\"ss}}1
+	{ü}{{\"u}}1
+	{ä}{{\"a}}1
+	{ö}{{\"o}}1
+	{~}{{\textasciitilde}}1
+}
+
+%\usepackage{hyperref}
+\usetikzlibrary{arrows,shapes,snakes,automata,backgrounds,petri}
+\lstdefinestyle{base}{
+  language=xml,
+  emptylines=1,
+  breaklines=true,
+  basicstyle=\ttfamily\color{black},
+  moredelim=**[is][\color{red}]{@}{@},
+}
+  
+
+\newcommand{\autorPraxisbericht}{Florian Zoia}
+\newcommand{\titelPraxisbericht}{Working Title}
+\newcommand{\titelVeranstaltung}{{\sl Bachelorthesis}}
+\newcommand{\ersterBetreuer}{Working Name}
+\newcommand{\fach}{Working Fach}
+\newcommand{\abgabeortPraxisbericht}{Frankfurt am Main}
+\newcommand{\datumAbgabePraxisbericht}{\today}
+\renewcommand{\labelenumii}{\arabic{enumi}.\arabic{enumii}}
+\renewcommand{\labelenumiii}{\arabic{enumi}.\arabic{enumii}.\arabic{enumiii}}
+\renewcommand{\labelenumiv}{\arabic{enumi}.\arabic{enumii}.\arabic{enumiii}.\arabic{enumiv}}
+
+
+
+\input{EinstellungenAllgemein.utf8.tex}
+\newcommand{\spw}{\glqq StaffIT pro\grqq{}}
+\begin{document}
+	
+	\maketitle
+	\thispagestyle{empty}
+	
+	\newpage
+	\pagestyle{headings}	
+	
+	
+	\newpage
+	\pagenumbering{arabic}
+	\setcounter{page}{1}
+
+\section{Forschungsthema}
+Diese Bachelorarbeit befasst sich mit dem Thema Buchhaltung. Dieses Thema betrifft, in Deutschland, jedes Unternehmen und vereinzelt auch Privatpersonen. Buchhaltungen sind ebenfalls ein monatlich oder jährlich wiederkehrendes Thema.
+\newline 
+Das Steuerbüro Dipl. Kfm. Thorsten Zoia hat Mandanten, deren Buchhaltungen sehr groß sind jedoch überschaubar. Aus diesem Grund wurde die Entscheidung getroffen eine von diesen Buchhaltungen zu automatisieren. Durch diese Maßnahme sollte sowohl Zeit, als auch Arbeitskraft gespart werden.
+\newline 
+Das Pilotprojekt automatisiert das Kontieren einer Buchhaltung, welche jeden Monat im Excel Format an die Steuerkanzlei übergeben wird. Diese Excel beinhaltet in der Regel 600 bis 800 Zeilen. Dabei entspricht eine Zeile einer Rechnung. 
+\newline 
+Diese Excel muss in das richtige Format gebracht werden, da das Steuerbüro das Programm "Agenda" verwendet für Buchhaltungen. Dieses kann Buchhaltungen im Excel Format einlesen. Allerdings müssen diese dafür im richtigen Format sein. Zusätzlich müssen die Rechnungen Kontiert werden. 
+
+
+\section{Zielsetzung und Erkenntnisinteresse}
+Das Ziel dieser Bachelorarbeit ist es herauszufinden, wie eine Buchhaltung am besten bearbeitet werden kann. Dafür werden die folgenden drei Arten gegenüber gestellt. 
+\begin{enumerate}
+	\item Die Buchhaltung händisch aufnehmen
+	\item Mit einem Programm, welches durch wiederholtes iterieren von mehreren Listen die Buchhaltung ausfüllt
+	\item Eine Künstliche Intelligenz, welche mit Hilfe von Supervised Learning vergangene Buchhaltung als Trainingsdaten nimmt, um zukünftige Buchhaltungen zu bearbeiten
+\end{enumerate}
+Das aus dieser Gegenüberstellung resultierende Ergebnis soll von der Steuerkanzlei Dipl. Kfm. Thorsten Zoia genutzt werden, um die buchhalterische Tätigkeiten weitestgehend zu vereinfachen. Diese Vereinfachung soll daraus bestehen, dass die Buchhaltung nun nicht mehr händisch gemacht werden muss und nur noch mit Hilfe einer Kontrolle abgedeckt ist. 
+
+\section{Forschungsstand und theoretische Grundlage}
+Die Grundlagen, welche sich diese Bachelorarbeit zur Nutze machen wird, sind weitestgehend erforscht und werden wieder gegeben, damit diese Arbeit ohne Nachforschung gelesen werden kann. 
+
+\subsection{Künstliche Intelligenz}
+
+
+\subsection{Supervised Learning}
+
+\subsection{Buchhaltung}
+
+\subsection{Python}
+
+\newpage
+\section{Konzept}
+Im folgenden gehe ich auf die Fragestellung, die Hypothese und die Methodik dieser Arbeit ein. 
+
+\subsection{Fragestellung}
+Diese Arbeit befasst sich mit der Frage: "Inwiefern kann die Automatisierung einer Buchhaltung eine Steuerkanzlei unterstützen und ist es Möglich diese Automatisierung durch ein KI gestütztes Programm zu verbessern ?"
+
+\subsection{Hypothese}
+Andere Arbeiten und im wahren Leben erprobte Beispiele zeigen auf, dass die Automatisierung das Leben von allen vereinfachen kann. Zusätzlich erlebt die Menschheit momentan wie sehr Künstliche Intelligenz uns unterstützen kann. Zum Beispiel hilft ChatGPT vielen, indem es einfache Aufgaben übernimmt. Außerdem können wir Bilder und Stimmen automatisch generieren und bereits existierende Stimmen imitieren lassen. 
+\newline 
+Daraus schließe ich, dass die Automatisierung einer Buchhaltung die Arbeit im Steuerbüro sehr viel leichter und angenehmer machen wird. Des Weiteren vermute ich, dass die Automatisierung durch ein KI gestütztes Programm ebenfalls einen weiteren Vorteil bringen wird und bald nicht nur eine Buchhaltung sondern viel mehr durch Automatisierung vereinfacht werden kann. 
+
+\subsection{Methodik}
+Diese Bachelorarbeit wird auf folgende Methodiken zurückgreifen:
+
+\begin{itemize}
+	\item Im Rahmen dieser Arbeit wurden mehrere Interviews geführt und ausgewertet.
+	\item Für diese Arbeit wurde Literaturrecherche betrieben. 
+	\item Es wird eine Analyse der verschiedenen Programme gemacht, um zu zeigen wobei es sich dabei handelt. 
+	\item Das Ergebnis wird beschrieben und bewertet wiedergegeben.
+\end{itemize}
+
+Das Ergebnis soll aufzeigen, ob die beschriebene Hypothese stimmt und ob noch Verbesserungspotenziale gesehen werden. 
+
+\newpage
+\section{Vorläufige Gliederung}
+\begin{enumerate}
+	\item Einführung
+	\begin{enumerate}
+		\item Einordnung in das Thema 
+		\item Leitfrage
+		\item Ziel der Arbeit 
+		\item Aufbau der Arbeit
+		\item Forschungsmethode 
+	\end{enumerate}
+
+
+	\item Grundlagen zum Verständnis der Bachelorarbeit 
+	\begin{enumerate}
+		\item Künstliche Intelligenz
+		\begin{enumerate}
+			\item Supervised Learning 
+			\item (Der entsprechende Algorithmus, welcher im Endeffekt angewendet wird)
+		\end{enumerate}
+		\item Buchhaltung 
+		\item Python
+	\end{enumerate}
+	
+	\item Beschreibung des Quellcodes 
+	\item Fazit
+\end{enumerate}
+
+\newpage
+\section{Aufgaben \& Zeitplan}
+\begin{itemize}
+	\item Programmieren
+	\begin{itemize}
+		\item Buch über KI's fertig bearbeiten 
+		\item KI fertig stellen 
+	\end{itemize}
+
+	\item Interviews
+	\begin{itemize}
+		\item Interviews vorbereiten 
+		\item Interviews halten 
+		\item Interviews nachbereiten 
+	\end{itemize}
+
+	\item Thesis schreiben 
+	\begin{itemize}
+		\item Grundlagen schreiben 
+		\item Programm vorstellen 
+		\item KI vorstellen 
+		\item Nutzen des Programms aufzeigen 
+		\item Die Arten der Buchhaltung gegenüberstellen 
+		\item Fazit 
+	\end{itemize}
+
+	\item Literaturverzeichnis füllen
+\end{itemize}
+
+
+  \begin{tabularx}{\textwidth}{|l*{3}{|>{\raggedright\arraybackslash}X}|}\hline
+	& Programmieren & Interviews & Thesis schreiben \\\hline
+	November & Buch über die KI fertig stellen & & Mit den Grundlagen beginnen \\\hline
+	Dezember & Mit der KI beginnen & Interviews halten (2 von 2) & Grundlagen fertig schreiben \\\hline
+	Januar & Letzte Bugs fixen / Puffer & Interviews nacharbeiten & Thesis schreiben  \\\hline
+\end{tabularx}
+  
+
+%\newpage
+%\input{./Abschnitte/Grundlagen.tex}
+
+
+%\newpage
+%\input{./Abschnitte/EvaluationProblemstellung.tex}
+
+
+
+%\newpage
+%\input{./Abschnitte/Lösungsansätze.tex}
+
+
+%\newpage
+%\input{./Abschnitte/Empfehlungen.tex}
+
+%\newpage
+%\pagenumbering{Roman}
+%\setcounter{page}{5}
+\bibliographystyle{unsrt} %
+
+\addcontentsline{toc}{section}{Vorläufiges Literaturverzeichnis} %
+\bibliography{./Literaturverzeichnis} %
+
+%\newpage \section*{}  \thispagestyle{empty} \newpage  \pagestyle{headings}
+%\input{./Abschnitte/Anhang.tex}
+\end{document}

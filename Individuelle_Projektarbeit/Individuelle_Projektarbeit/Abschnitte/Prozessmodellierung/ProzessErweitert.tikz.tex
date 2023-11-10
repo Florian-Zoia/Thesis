@@ -1,0 +1,69 @@
+\tikzstyle{place}=[circle, thick, draw=blue!75, fill=blue!20, minimum size=10mm, node distance = 2.5cm]
+\tikzstyle{transition}=[rectangle, rounded corners, thick, draw=black!75, fill=black!20, minimum height=1cm, minimum width = 2.3cm, node distance = 2.5cm, align=left]
+\tikzstyle{token}=[circle, thick, draw=blue!75, fill=blue!20, minimum size=5mm, node distance = 2.5cm]
+
+
+\begin{scope}
+
+	\node [transition](input){Input};
+		
+	\node[place, below of = input, yshift = 1cm](p0){}
+		edge[pre, line width=1.5pt](input);
+
+	\node[transition, below of=p0, right of = p0, yshift=1cm](stadisInSas){STADIS einlesen}
+		edge[pre, line width=1.5pt](p0);	
+	\node [place, below of=stadisInSas, yshift=1cm](ps0){}
+		edge[pre, line width=1.5pt](stadisInSas);
+	\node[transition, below of =ps0, yshift=1cm](stadisSasExtract){Extrahieren per Code}
+		edge[pre, line width=1.5pt](ps0);
+	\node[place, below of=stadisSasExtract, yshift=1cm](ps1){}
+		edge[pre, line width=1.5pt](stadisSasExtract);
+	\node[transition, below of=ps1, yshift=1cm](trans){STADIS\\Transformation}
+		edge[pre, line width=1.5pt](ps1);
+	\node [place, below of=trans, yshift=1cm](ps2){}
+		edge[pre, line width=1.5pt](trans);
+	\node [transition, below of=ps2, yshift=1cm](STADIS Load){Laden in\\DWH}
+		edge[pre, line width=1.5pt](ps2);
+	
+	\node[transition, below of=p0, left of =p0, yshift=1cm](xmlInSas){XML einlesen}
+		edge[pre, line width=1.5pt](p0);
+	\node[place, below of=xmlInSas, yshift=1cm](px0){}
+		edge[pre, line width=1.5pt](xmlInSas);
+	\node[transition, below of = px0, yshift=1cm](xmlSasMapping){XML Mappen}
+		edge[pre, line width=1.5pt](px0);
+	\node[place, below of=xmlSasMapping, yshift=1cm](px1){}
+		edge[pre, line width=1.5pt](xmlSasMapping);
+	\node[transition, below of=px1, yshift=1cm](XMLtrans){XML\\Transformation}
+		edge[pre, line width=1.5pt](px1);
+	\node [place, below of=XMLtrans, yshift=1cm](px2){}
+		edge[pre, line width=1.5pt](XMLtrans);
+	\node [transition, below of=px2, yshift=1cm](xmlLoad){Laden in\\DWH}
+		edge[pre, line width=1.5pt](px2);
+		
+		
+%	\node [transition](input) {Input};
+%	
+%	\node [place, right of = input] (p1){}
+%		edge [pre, line width =1.5pt] (input);
+%	
+%	\node [transition, right of = p1](extraction1) {Extraktion 1}
+%		edge [pre, line width =1.5pt] (p1);
+%	
+%	\node [place, right of = extraction1](p2) {}
+%		edge [pre, line width =1.5pt] (extraction1);
+%	
+%	\node [transition, right of= p2](transform) {Transformation}
+%		edge [pre, line width =1.5pt] (p2);
+%	
+%	\node [place, right of = transform](p3) {}
+%		edge [pre, line width =1.5pt] (transform);
+%	
+%	\node [transition, below of = p3](extraction2) {Extraktion 2}
+%		edge [pre, line width =1.5pt] (p3);
+%	
+%	\node [place, left  of=extraction2](p4) {}
+%		edge [pre, line width =1.5pt] (extraction2);
+%	
+%	\node [transition, left of=p4] (output) {Output}
+%		edge [pre, line width =1.5pt] (p4);
+\end{scope}

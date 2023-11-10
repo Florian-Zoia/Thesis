@@ -1,0 +1,51 @@
+\tikzstyle{place}=[circle, thick, draw=blue!75, fill=blue!20, minimum size=10mm, node distance = 2.5cm]
+\tikzstyle{transition}=[rectangle, rounded corners, thick, draw=black!75, fill=black!20, minimum height=1cm, minimum width = 2.3cm, node distance = 2.5cm, align=left]
+
+\begin{scope}
+	\node[transition](ref){Referenzieren auf\\STADIS-Daten};
+	\node[place, left of = ref](p){}
+		edge[pre, line width=1.5pt](ref);
+	\node [transition, left of = p](get){Einlesen STADIS\\in SAS}
+		edge[pre, line width=1.5pt](p);
+	\node[place, below of=get, yshift=1cm](p0){}
+		edge [pre, line width=1.5pt](get);
+	\node[transition, below of=p0, yshift=1cm](getSatz){Einlesen STADIS-\\Datensatz}
+		edge [pre, line width=1.5pt](p0);
+	
+	\node [place, below of=getSatz, yshift=1cm] (p1){}
+		edge [pre, line width=1.5pt] (getSatz);
+	
+	\node [transition, below of=p1, yshift=1cm](check){Richtiger\\Satztyp?}
+		edge [pre, line width=1.5pt] (p1); 
+	
+	\node [place, below of=check, yshift=1cm](p2){}
+		edge [pre, line width=1.5pt] (check);
+		
+	\node[transition, below of=p2, right of=p2, yshift=1cm](yes){Ja}
+		edge [pre, line width=1.5pt] (p2);
+	\node[place, below of =yes,yshift=1cm](pJ1){}
+		edge [pre, line width=1.5pt] (yes);
+	\node[transition, below of=pJ1, yshift=1cm](read){Im Code definierte\\Zeilen einlesen}
+		edge [pre, line width=1.5pt](pJ1);	
+	
+	\node[transition, below of=p2, left of=p2, yshift=1cm](no){Nein}
+		edge [pre, line width=1.5pt] (p2);
+	\node [place, left of=read, left of =read](p3){}
+		edge [pre, line width=1.5pt](no)
+		edge [pre, line width=1.5pt](read);
+	\node[transition, below of=p3, yshift=1cm](endRead){Satzende erreicht?}
+		edge[pre, line width=1.5pt](p3);
+	\node[place, below of = endRead, yshift=1cm](pD1){}
+		edge [pre, line width=1.5pt](endRead);
+	\node [transition, below of=pD1, left of=pD1, yshift=1cm](endNope){Nein}
+			edge [pre, line width=1.5pt](pD1)
+			edge [post,bend left=40, line width=1.5pt](p0);
+		
+	\node[transition, below of=pD1, right of=pD1, yshift=1cm](endYes){Ja}
+		edge [pre, line width=1.5pt](pD1);
+	\node[place, below of =endYes, yshift=1cm](p4){}
+		edge [pre, line width=1.5pt](endYes);
+	\node[transition, below of = p4, yshift=1cm](end){Ende der\\Extraktion}
+		edge [pre, line width=1.5pt](p4);
+	
+\end{scope}

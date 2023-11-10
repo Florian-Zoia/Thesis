@@ -1,0 +1,1061 @@
+% Encoding: UTF-8
+@book{vogel2003systems,
+                title={Systems software engineering},
+                author={Vogel-Heuser, B.},
+                isbn={9783486270358},
+                url={https://books.google.de/books?id=GF81W8DlUVYC},
+                year={2003},
+                publisher={Oldenbourg Industrieverl.}
+}
+
+@Book{spitta2013software,
+  title     = {Software Engineering und Prototyping: Eine Konstruktionslehre f{\"u}r administrative Softwaresysteme},
+  publisher = {Springer Berlin Heidelberg},
+  year      = {2013},
+  author    = {Thorsten Spitta},
+  series    = {Springer Compass},
+  isbn      = {9783642955198},
+  url       = {https://books.google.de/books?id=VsahBgAAQBAJ},
+}
+
+@misc{audeosoft_recruiting_2015,
+	title = {Recruiting {Software} {\textbar} {CRM}},
+	author = {audeoSoft GmbH},
+	note = {\url{http://www.staffITpro.de/}(letzter Zugriff 28.07.2015)},
+language = {Deutsch},
+	urldate = {2015-28-07},
+	publisher = {audeoSoft GmbH},
+	journal = {staffITpro WEB},
+	year = {2015}
+}
+
+@Book{www.kvw.de2016,
+  title     = {Merkblatt KMU-Definition},
+  publisher = {KFW},
+  year      = {2016},
+  author    = {KVW Bank},
+  note      = {\url{https://www.kfw.de/Download-Center/F%C3%B6rderprogramme-(Inlandsf%C3%B6rderung)/PDF-Dokumente/6000000196-KMU-Definition.pdf} (letzter Zugriff: 05.10.2017)},
+  url       = {https://www.kfw.de/Download-Center/F%C3%B6rderprogramme-(Inlandsf%C3%B6rderung)/PDF-Dokumente/6000000196-KMU-Definition.pdf},
+}
+@Book{Gadatsch2017b,
+  title     = {IT-Unterstützung für das Prozessmanagement},
+  publisher = {Springer Fachmedien Wiesbaden GmbH 2017},
+  year      = {2017},
+  author    = {A. Gadatsch},
+}
+
+@Book{Bundesamt2014,
+  title     = {Die wirtschaftliche Bedeutung kleiner und mittlerer Unternehmen in Deutschland},
+  publisher = {DESTATIS},
+  year      = {2014},
+  author    = {Statistisches Bundesamt},
+  note      = {\url{https://www.destatis.de/DE/ZahlenFakten/GesamtwirtschaftUmwelt/UnternehmenHandwerk/KleineMittlereUnternehmenMittelstand/Methoden/Methodisches.html} (letzter Zugriff: 06.10.2017)},
+}
+
+@Book{Riggert2016,
+  title     = {Archivierung: historie und rechtliche Rahmenbedingungen},
+  publisher = {FH Flensburg},
+  year      = {2016},
+  author    = {Prof. Dr. Wolgang Riggert},
+  note      = {\url{http://www.wi.fh-flensburg.de/fileadmin/dozenten/Riggert/bildmaterial/Dokumentenmanagement/5-Preserve-Archivierung-Historie-Recht.pdf} (letzter Zugriff: 05.10.2017)},
+}
+
+
+@misc{KostenNutzen_Muehlenkamp_2010,
+	title = {Zur Kosten-Nutzen-Analyse von E-Government-Projekten},
+	author = {Holger Mühlenkamp},
+	note = {\url{http://www.uni-speyer.de/files/de/Lehrst%C3%BChle/M%C3%BChlenkamp/Publikationen/2010KNAvonE-Government(SBWirtz).pdf} (letzter Zugriff 14.02.2016)},
+	language = {Deutsch},
+	urldate = {2016-14-02},
+	publisher = {Uni Speyer},
+	year = {2010}
+}
+
+@misc{Definition_KostenNutzen_2005,
+	title = {Kosten-Nutzen-Analyse},
+	author = {Dr. Georg Angermeier},
+	note = {\url{https://www.projektmagazin.de/glossarterm/kosten-nutzen-analyse} (letzter Zugriff 14.02.2016)},
+	language = {Deutsch},
+	urldate = {2016-14-02},
+	publisher = {ProjektMagazin - Das Fachportal für Projektmanagement},
+	year = {2005}
+}
+
+@Misc{Gartner_Inc_2016,
+  author       = {Gartner, Inc.},
+  title        = {Marktforschungsinstitut Gartner},
+  howpublished = {\url{http://www.gartner.com/technology/about.jsp#} (letzter Zugriff 29.02.2016)},
+  year         = {2016},
+  journal      = {Gartner, Inc.},
+  language     = {Deutsch},
+  publisher    = {Gartner, Inc.},
+  urldate      = {2016-29-02},
+}
+
+
+@misc{Definition_Anforderungskatalog_2015,
+	title = {Anforderungskatalog},
+	author = {Dr. Georg Angermeier},
+	note = {\url{https://www.projektmagazin.de/glossarterm/anforderungskatalog} (letzter Zugriff 19.01.2016)},
+	language = {Deutsch},
+	urldate = {2016-19-01},
+	publisher = {ProjektMagazin - Das Fachportal für Projektmanagement},
+	year = {2015}
+}
+
+@misc{Definition_Anforderungskatalog_2014,
+	title = {Anforderungskatalog},
+	author = {Onlinemarketing-Praxis},
+	note = {\url{http://www.onlinemarketing-praxis.de/glossar/lastenheft-anforderungskatalog} (letzter Zugriff 19.01.2016)},
+	language = {Deutsch},
+	urldate = {2016-19-01},
+	publisher = {Onlinemarketing-Praxis, das Wissensportal für erfolgreiches Marketing im Internet},
+	year = {o. J.}
+}
+
+
+@misc{Gartner_Definition_2016,
+	title = {Gartner Magic Quadranten},
+	author = {c/o TechTarget},
+	note = {\url{http://www.searchenterprisesoftware.de/definition/Gartner-Magic-Quadranten} (letzter Zugriff 29.02.2016)},
+	language = {Deutsch},
+	urldate = {2016-29-02},
+	publisher = {c/o TechTarget},
+	journal = {searchenterprisesoftware.de},
+	year = {2014}
+}
+@Book{Knuppertz2012,
+	author = {Thilo Knuppertz},
+	title = {Prozessmanagement für Dummies},
+	publisher = {Wiley-VCH Verlag},
+	year = {2012}
+}
+@Book{Jochem2010,
+	author = {Roland Jochem and Kai Mertins and Thomas Knote},
+	title = {Prozessmanagement: Strategien, Methoden, Umsetzung},
+	publisher = {Symposion Publishing},
+	year = {2010}
+}
+@Book{Rainardi2007,
+	author = {Cincent Rainardi},
+	title = {Building a Data Warehouse: With Examples in SQL Server},
+	publisher= {APress},
+	year = {2007}
+}
+@book{herold_grundlagen_2007,
+	address = {München; Boston u.a.},
+	edition = {Auflage: 1},
+	title = {Grundlagen der Informatik},
+	isbn = {9783827373052},
+	language = {Deutsch},
+	publisher = {Addison-Wesley Verlag},
+	author = {Herold, Helmut and Lurz, Bruno and Wohlrab, Jürgen},
+	month = aug,
+	year = {2007}
+}
+
+@book{kannengiesser_php5_2007,
+	address = {Poing},
+	edition = {Auflage: 1., Aufl.},
+	title = {{PHP}5 / {MySQL} 5 Master Edition},
+	isbn = {9783772371103},
+	language = {Deutsch},
+	publisher = {Franzis},
+	author = {Kannengiesser, Caroline and Kannengiesser, Matthias},
+	month = mar,
+	year = {2007}
+}
+
+@book{sebestyen_xml_2010,
+	address = {München},
+	edition = {Auflage: 1},
+	title = {{XML} - Einstieg für Anspruchsvolle},
+	isbn = {9783827326546},
+	shorttitle = {{XML} - inkl. Lerntest auf {CD}},
+	language = {Deutsch},
+	publisher = {Addison-Wesley Verlag},
+	author = {Sebestyen, Thomas J.},
+	month = sep,
+	year = {2010}
+}
+
+@Book{doberenz_datenbank-programmierung_2010,
+  title      = {Datenbank-Programmierung mit Visual C\# 2010: Grundlagen, Rezepte, Anwendungsbeispiele},
+  publisher  = {Microsoft},
+  year       = {2010},
+  author     = {Doberenz, Walter and Gewinnus, Thomas},
+  address    = {Unterschleissheim},
+  edition    = {Auflage: 1., A.},
+  month      = oct,
+  isbn       = {9783866454460},
+  language   = {Deutsch},
+  shorttitle = {Datenbank-Programmierung mit Visual C\# 2010},
+}
+
+@book{hubscher_it-handbuch_2011,
+	address = {Braunschweig},
+	edition = {Auflage: 7. Auflage.},
+	title = {{IT}-Handbuch {IT}-Systemelektroniker/-in Fachinformatiker/-in: 7. Auflage, 2011},
+	isbn = {9783142250427},
+	shorttitle = {{IT}-Handbuch {IT}-Systemelektroniker/-in Fachinformatiker/-in},
+	language = {Deutsch},
+	publisher = {Westermann Schulbuch},
+	author = {Hübscher, Heinrich and Rathmann, Carsten and Richter, Klaus and Petersen, Hans J. and Scharf, Dirk},
+	month = jan,
+	year = {2011}
+}
+@book{Kemper_BusinessIntelligence_2010,
+	address = {Wiesbaden},
+	edition = {3},
+	title = {Business Intelligence - Grundlagen und praktische Anwendungen},
+	isbn = {9783834807199},
+	shorttitle = {Business Intelligence},
+	language = {Deutsch},
+	publisher = {Vieweg + Teubner},
+	author = {Kemper, H.-G. and Baars H. and Mehanna W.},
+	year = {2010}
+	}
+@book{laudon_wirtschaftsinformatik:_2009,
+	address = {München; Boston, Mass. u.a.},
+	edition = {2},
+	title = {Wirtschaftsinformatik: Eine Einführung},
+	isbn = {9783827373489},
+	shorttitle = {Wirtschaftsinformatik},
+	language = {Deutsch},
+	publisher = {Addison-Wesley Verlag},
+	author = {Laudon, Kenneth C. and Laudon, Jane P. and Schoder, Detlef},
+	month = nov,
+	year = {2009}
+}
+@misc{manuel_montero_pineda_qualitatssicherung_2013,
+	title = {Qualitätssicherung von {XML} - Grundlagen, Validierungssprachen, Praxisbeispiele},
+	shorttitle = {Qualitätssicherung von {XML}},
+	note = {\url{https://www.video2brain.com/de/videotraining/qualitaetssicherung-von-xml} (letzter Zugriff 27.01.2015)},
+	language = {Deutsch},
+	urldate = {2015-01-28},
+	journal = {video2brain},
+	author = {{Manuel Montero Pineda}},
+	month = oct,
+	year = {2013}
+}
+@book{matthiessen_relationale_2007,
+	address = {München u.a.},
+	edition = {4},
+	title = {Relationale Datenbanken und Standard-{SQL}},
+	isbn = {9783827326560},
+	language = {Deutsch},
+	publisher = {Addison-Wesley Verlag},
+	author = {Matthiessen, Günter and Unterstein, Michael},
+	month = dec,
+	year = {2007}
+}
+
+@misc{SAS_unternehmen_2015,
+	title = {SAS Unternehmens-Website},
+	author = {SAS},
+	note = {\url{http://www.sas.com/de_de/company-information.html} (letzter Zugriff 17.02.2015)},
+	language = {Deutsch},
+	urldate = {2015-02-17},
+	publisher = {SAS Institute GmbH},
+	year =  {2015}
+	
+}
+
+
+@misc{andreas_adlichhammer_xml_2011,
+	title = {{XML} mit {SAS} leicht gemacht},
+	note = {\url{http://de.saswiki.org/images/0/04/15._KSFE_2011_-_Adlichhammer_-_XML_mit_SAS_leichtgemacht.pdf} letzter Zugriff 03.03.2015)},
+	language = {Deutsch},
+	urldate = {2015-03-03},
+	publisher = {HMS Analytical Software},
+	author = {{Andreas Adlichhammer}},
+	year = {2011}
+}
+
+@book{Amadeus_xml_2007,
+	address = {Bad Homburg},
+	edition = {Auflage: 4.1},
+	title = {Amadeus Tour Market - (Toma) Technische Details - Technische Einführung},
+	shorttitle = {Amadeus Tour Market - (Toma) Technische Details},
+	language = {Deutsch},
+	publisher = {Amadeus},
+	author = {Amadeus},
+	year = {2007}
+	}
+@book{Amadeus_xmldaten_2007,
+	address = {Bad Homburg},
+	edition = {Auflage: 4.1},
+	title = {Amadeus Tour Market - (Toma) Technische Details - Allgemeine Datenstrukturen},
+	shorttitle = {Amadeus Tour Market - (Toma) Technische Details},
+	language = {Deutsch},
+	publisher = {Amadeus},
+	author = {Amadeus},
+	year = {2007}
+}
+
+@book{Amadeus_xmlmeldung_2007,
+	address = {Bad Homburg},
+	edition = {Auflage: 4.1},
+	title = {Amadeus Tour Market - (Toma) Technische Details - Übersicht der Erfolgs-, Hinweis- und Fehlermeldungen},
+	shorttitle = {Amadeus Tour Market - (Toma) Technische Details},
+	language = {Deutsch},
+	publisher = {Amadeus},
+	author = {Amadeus},
+	year = {2007}
+	}
+
+@book{mcdaniel_sas_2010,
+	address = {Hoboken, N.J},
+	edition = {2. Auflage},
+	title = {{SAS} {For} {Dummies}},
+	isbn = {9780470539682},
+	language = {Englisch},
+	publisher = {John Wiley \& Sons},
+	author = {McDaniel, Stephen and Hemedinger, Chris},
+	month = apr,
+	year = {2010}
+}
+@book{publishing_sas_2011,
+	address = {Cary, N.C},
+	title = {{SAS} {Certification} {Prep} {Guide}:: {Advanced} {Programming} for {SAS} 9, {Third} {Edition}},
+	isbn = {9781607649250},
+	shorttitle = {{SAS} {Certification} {Prep} {Guide}},
+	language = {Englisch},
+	publisher = {Sas Inst},
+	author = {SAS},
+	month = jul,
+	year = {2011}
+}
+
+@misc{Wirtschaftslexican_Batch_2015,
+	title = {Stapelbetrieb},
+	author = {Springer-Gabler-Verlag},
+	note = {\url{http://wirtschaftslexikon.gabler.de/Archiv/56393/stapelbetrieb-v9.html} (letzter Zugriff 14.03.2015)},
+	language = {Deutsch},
+	urldate = {2015-03-14},
+	publisher = {Springer Gabler Verlag},
+	year = {2015}
+	
+}
+@misc{Batchverarbeitung_Batch_2015,
+	title = {Batchverarbeitungin JEE7},
+	author = {Christoph Schmidt-Casdorff},
+	note = {\url{http://www.iks-gmbh.com/assets/downloads/JS-02-14-csc-Java-Batch.pdf?} (letzter Zugriff 27.03.2015)},
+	language = {Deutsch},
+	urldate = {2015-03-27},
+	publisher = {iks Gesellschaft für Informations- und Kommunikationssysteme},
+	year = {2015}
+	
+}
+
+@misc{Wirtschaftslexican_Job_2015,
+	title = {Job},
+	author = {Springer-Gabler-Verlag},
+	note = {\url{http://wirtschaftslexikon.gabler.de/Archiv/55047/job-v8.html}(letzter Zugriff 14.03.2015)},
+	language = {Deutsch},
+	urldate = {2015-03-14},
+	publisher = {Springer Gabler Verlag},
+	year = {2015}
+	
+}
+
+@book{reisig_petrinetze:_2010,
+	address = {Wiesbaden},
+	edition = {2010},
+	title = {Petrinetze: {Modellierungstechnik}, {Analysemethoden}, {Fallstudien}},
+	isbn = {9783834812902},
+	shorttitle = {Petrinetze},
+	language = {Deutsch},
+	publisher = {Vieweg+Teubner Verlag},
+	author = {Reisig, Wolfgang},
+	month = jul,
+	year = {2010}
+}
+
+
+@misc{SQL2017,
+	titel={Definition - SQL Server},
+	note = {\url{http://www.searchenterprisesoftware.de/definition/Microsoft-SQL-Server} (letzter Zugriff 02.03.2017)},
+	author = {TechTarget},
+	language = {Deutsch},
+	organization = {TechTarget Deutschland},
+	urldate = {2017-03-22},
+	year = {2017}
+}
+
+@misc{MicrosoftSQL2017,
+	author = {Microsoft},
+	titel={Microsoft SQL Server 2016},
+	date = {15.03.2017},
+	note = {\url{https://www.microsoft.com/de-de/sql-server/sql-server-2016} (letzter Zugriff 02.03.2017)},
+	language = {Deutsch},
+	organization = {Microsoft},
+	urldate = {2017-03-04},
+	year = {2017}
+}
+
+@Misc{Gartner2016,
+  author       = {Gartner, Inc.},
+  title        = {Marktforschungsinstitut Gartner},
+  howpublished = {\url{http://www.gartner.com/technology/about.jsp#} (letzter Zugriff 29.02.2016)},
+  year         = {2016},
+  journal      = {Gartner, Inc.},
+  language     = {Deutsch},
+  publisher    = {Gartner, Inc.},
+  urldate      = {2016-29-02},
+}
+
+@misc{JSON2017,
+author = {ECMA},
+title = {The JSON Data
+Interchange Format},
+date = {15.03.2017},
+language = {Englisch},
+type = {Standard ECMA-404},
+organization = {ECMA},
+note = {\url{http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf} (letzter Zugriff 22.03.2017},
+urldate = {15.03.2017},
+year = {2017}
+}
+
+
+@misc{MicrosoftC2017,
+author = {Microsoft},
+title = {C Sharp Visual Studio 2015},
+note = {\url{https://msdn.microsoft.com/de-de/library/kx37x362.aspx} (letzter Zugriff 24.02.2017)},
+organization = {Microsoft},
+urldate = {12.03.2017},
+year = {2017}
+}
+
+@misc{MicrosoftTaskSheduler,
+	author = {TechNet},
+	title = {Shedule a Task},
+	note = {\url{https://technet.microsoft.com/en-us/library/cc748993(v=ws.11).aspx} (letzter Zugriff 24.02.2017)},
+	urldate = {10.03.2017},
+	organization = {Microsoft},
+	year = {2017}
+}
+
+@misc{inaport2017,
+	author = {Inaplex},
+	title = {Inaport - Code Free Data Integration},
+	language = {Englisch},
+	note = {\url{https://www.inaplex.com/Products/Inaport-Overview} (letzter Zugriff 24.02.2017)},
+	organization = {Inaplex},
+	year = {2017},
+	urldate = {05.03.2017},
+}
+
+@misc{InforCRM2017,
+	author = {Infor},
+	title = {The Power of Infor CRM},
+	language = {Deutsch},
+	note = {\url{http://www.infor.de/solutions/crm/} (letzter Zugriff 24.02.2017)},
+	year = {2017},
+	urldate = {26.02.2017},
+}
+
+@misc{Powershell2017,
+	author = {TechNet},
+	title = {Skripterstellung mit Windows PowerShell},
+	note = {\url{https://technet.microsoft.com/de-de/library/bb978526.aspx} (letzter Zugriff 24.02.2017)},
+	organization = {Microsoft},
+	year = {2017},
+	urldate = {03.03.2017},
+}
+
+@misc{winscp,
+	author = {WinSCP},
+	title = {WinSCP},
+	date = {01.03.2017},
+	note = {\url{https://winscp.net/eng/docs/lang:de} (letzter Zugriff 27.03.2017)},
+	year = {2017},
+}
+
+@misc{ftpsftp,
+	author = {Wise FTP},
+	title = {Erläuterung des FTP- und SFTP-Protokolls},
+	date = {24.02.2017},
+	note = {\url{http://www.wise-ftp.de/know-how/ftp_und_sftp_protokoll.htm} (letzter Zugriff 24.02.2017)},
+	organization = {Wise FTP},
+	year = {2017},
+	urldate = {24.02.2017}
+}
+@misc{IntranetGBAT2017,
+	title = {Global Business Administration Tool (GBAT)},
+	note = {Intranet der Messe Frankfurt GmbH},
+	date = {24.02.2017},
+	author = {Torsten Posselt},
+	publisher = {H43 - Digital Services},
+	year = {2016},
+}
+@misc{IntranetGES2017,
+	title = {Global Exhibitor Search (GES)},
+	note = {Intranet der Messe Frankfurt GmbH},
+	date = {20.04.2017},
+	author = {Torsten Posselt},
+	publisher = {H43 - Digital Services},
+	year = {2016},
+}
+
+@Misc{Simmet2016,
+  author    = {Prof. Dr. Heike Simmet},
+  title     = {Mit der Digitalisierung Schritt halten und der Zeitfalle entkommen},
+  year      = {2016},
+  note      = {\url{https://hsimmet.com/2016/02/07/mit-der-digitalisierung-schritt-halten-und-der-zeitfalle-entkommen/} (letzter Zugriff: 26.09.2017)},
+  timestamp = {20.09.2017},
+  url       = {https://hsimmet.com/2016/02/07/mit-der-digitalisierung-schritt-halten-und-der-zeitfalle-entkommen/},
+}
+
+@Book{WolfgangBecker2013,
+  title     = {Digitalisierung im Mittelstand - Ergebnisbericht einer Online-Umfrage},
+  publisher = {Bamberger Betriebswirtschaftliche Beiträge 192},
+  year      = {2013},
+  author    = {Prof. Dr. Dr. habil. Wolfgang Becker and Dr. Patrick Ulrich and Maria Vogt},
+}
+
+@Book{Welpe2017,
+  title     = {Führung 4.0 –Wie die Digitalisierung Führung verändert},
+  publisher = {Springer Berlin Heidelberg},
+  year      = {2017},
+  author    = {Dipl.-Psych. Tanja Schwarzmüller and Dr. Prisca Brosi and Prof. Dr. Isabell M. Welpee},
+}
+
+@Book{Meise2017,
+  title     = {Digitalisierung von Kommunikations und Dokumentenprozessen – Herausforderung oder Chance?},
+  publisher = {Springer-Verlag GmbH Deutschland 2017},
+  year      = {2017},
+  author    = {Sven Meise},
+}
+
+@Book{Seel2017,
+  title     = {Trends im Geschäftsprozessmanagement},
+  publisher = {Springer Fachmedien Wiesbaden GmbH 2017},
+  year      = {2017},
+  author    = {Christian Seel and Christian Müller and Thomas Barton},
+}
+
+@Book{Gadatsch2017,
+  title     = {Organisation und Einführung des Geschäftsprozessmanagements},
+  publisher = {Springer Fachmedien Wiesbaden GmbH 2017},
+  year      = {2017},
+  author    = {Gadatsch},
+}
+
+@Book{Gadatsch2017a,
+  title     = {Konzepte des Prozessmanagements},
+  publisher = {Springer Fachmedien Wiesbaden GmbH 2017},
+  year      = {2017},
+  author    = {Gadatsch},
+}
+
+@Book{Becker2007,
+  title     = {Bausteinbasierte Modellierung von Prozesslandschaften mit der PICTURE-Methode am Beispiel der Universitätsverwaltung Münster},
+  publisher = {Wirtschaftsinformatik, 49Jg., Heft 4,},
+  year      = {2007},
+  author    = {Becker and Algermissen and Pfeiffer and Räckers},
+}
+
+@Book{Binner2017,
+  title     = {Konfigurationsmanagementkonzept für die Prozessdigitalisierung im Mittelstand},
+  publisher = {Spektrum | Organisation 4.0},
+  year      = {2017},
+  author    = {Hartmut F. Binner},
+}
+
+@Book{Binner2014,
+  title     = {Prozessorientierte Organisationsentwicklung und Prozessgestaltung mit dem MITO-Methoden-Tool},
+  publisher = {Hartmut F. Binner},
+  year      = {2014},
+  author    = {Hartmut F. Binner},
+}
+
+@Book{Brunner2002,
+  title     = {Szenariotechnik zur Entwicklung von Geschäftsstrategien am Beispiel des Werkzeug - und Anlagenbaus der BMW Group},
+  publisher = {Zeitschrift für Organisation, Heft 5},
+  year      = {2002},
+  author    = {Brunner and Hartel and Georges},
+}
+
+@Book{GrafvonBuedingen2011,
+  title     = {BPM-Methoden und Tools als Basis für wirtschaftliche und compliancegerechte Abläufe im E.ON-Energie-Konzern},
+  publisher = {Komus, A: BPM Best Practice},
+  year      = {2011},
+  author    = {Graf von Büdingen, G. and Schlaf, S.:},
+}
+
+@Book{Schmelzer2013,
+  title     = {Geschäftsprozessmanagement in der Praxis: Kunden zufrieden stellen – Produktivität steigern – Wert erhöhen},
+  publisher = {8., überarb. und erw. Aufl. Hanser, München},
+  year      = {2013},
+  author    = {Schmelzer and Sesselmann},
+}
+
+@Book{24-Service2017,
+  title     = {Hat die Digitalisierung Grenzen? – Die Frage des Tages},
+  publisher = {Info-24-Service},
+  year      = {2017},
+  author    = {Info-24-Service},
+  note      = {\url{https://www.info24service.com/hat-die-digitalisierung-grenzen-die-frage-des-tages/} (letzter Zugriff: 19.09.2017)},
+}
+
+@Book{Redaktion2016,
+  title     = {Exklusiv: Leitfaden Digitalisierung für den Mittelstand},
+  publisher = {Digitales-Wirtschaftwunder.de},
+  year      = {2016},
+  author    = {Redaktion Digitales-Wirtschaftwunder.de},
+  note      = {\url{https://digitales-wirtschaftswunder.de/exklusiv-leitfaden-digitalisierung-fuer-den-mittelstand/} (letzter Zugriff 28.09.2017)},
+}
+
+@Book{Digitales-Wirtschaftwunder.de2016,
+  title     = {Leitfaden Digitalisierung: Die optimale Strategie},
+  publisher = {Digitales-Wirtschaftwunder.de},
+  year      = {2016},
+  author    = {Redaktion Digitales-Wirtschaftwunder.de},
+  note      = {\url{https://digitales-wirtschaftswunder.de/leitfaden-digitalisierung-die-optimale-strategie/} (letzter Zugriff: 28.09.2017)},
+}
+
+@Book{GBTEC2017,
+  title     = {Digitalisierung und Prozessmanagement - „Woots“ als „Klebstoff“ zwischen Strategie und Implementierung},
+  publisher = {GBTEC Software + Consulting AG},
+  year      = {2017},
+  author    = {GBTEC},
+  note      = {\url{https://www.gbtec.de/de/ueber-gbtec/neuigkeiten/digitalisierung\_prozessmanagement/} (letzter Zugriff: 27.09.2017)},
+}
+
+@Book{Statista2017,
+  title     = {Anzahl der Unternehmen in Deutschland nach Beschäftigtengrößenklassen im Jahr 2015 (Stand Oktober 2016)},
+  publisher = {Statista},
+  year      = {2017},
+  author    = {Statista},
+  note      = {\url{https://de.statista.com/statistik/daten/studie/1929/umfrage/unternehmen-nach-beschaeftigtengroessenklassen/} (letzter Zugriff: 21.09.2017)},
+}
+
+@Book{StatistischesBundesamt2014,
+  title     = {Die wirtschaftliche Bedeutung kleiner und mittlerer Unternehmen in Deutschland},
+  publisher = {destadis Statistisches Bundesamt},
+  year      = {2014},
+  author    = {Statistisches Bundesamt, Wiesbaden},
+  note      = {\url{https://www.destatis.de/DE/Publikationen/WirtschaftStatistik/UnternehmenGewerbeanzeigen/ BedeutungKleinerMittlererUnternehmen} (letzter Zugriff: 15.09.2017)},
+}
+
+@Book{Roecker2016,
+  title     = {Dokumentenmanagement, der effizienteste Hebel der Digitalisierung},
+  publisher = {agorum Software GmbH},
+  year      = {2016},
+  author    = {Stefan Röcker},
+  note      = {\url{http://mein-dms.agorum.com/blog/dokumentenmanagement-als-effizientester-hebel-der-digitalisierung} (letzter Zugriff: 02.10.2017)},
+}
+
+@Book{Ziebolz2017,
+  title     = {Mit Dokumentenmanagement-Systemen zur digitalen Transformation},
+  publisher = {2017 WEKA FACHMEDIEN GmbH},
+  year      = {2017},
+  author    = {Natalie Ziebolz},
+}
+
+@Book{EuropeanAssociation2014,
+  title     = {BPM CBOK® - Business Process Management BPM Common Body of Knowledge, Version 3.0},
+  publisher = {Schmidt (Götz), Wettenberg},
+  year      = {2014},
+  author    = {{European Association of BPM}},
+  edition   = {2},
+  isbn      = {978-3-921313-91-6},
+}
+
+@Book{Landkreistag2014,
+  title     = {Leitfaden zur Analyse und Optimierung von Verwaltungsprozessen in den Landratsämtern},
+  publisher = {Bayerischer Landkreistag},
+  year      = {2014},
+  author    = {Bayerischer Landkreistag},
+}
+
+@Book{Berlin2009,
+  title     = {BPMN 2.0 Poster},
+  publisher = {Business Process Management Offensive Berlin},
+  year      = {2009},
+  author    = {Business Process Management Offensive Berlin},
+  note      = {\url{http://bpmb.de/index.php/BPMNPoster} (letzter Zugriff 23.11.2017)},
+}
+
+@Book{Thiede2017,
+  title     = {CMIS - neuer Standard für die ECM-Industrie},
+  publisher = {Heise Online},
+  year      = {2017},
+  author    = {Christian Thiede},
+  note      = {\url{https://www.heise.de/developer/artikel/CMIS-neuer-Standard-fuer-die-ECM-Industrie-1082119.html} (letzter Zugriff 22.12.1017)},
+}
+
+@Book{Committee2012,
+  title         = {Content Management Interoperability Services (CMIS) - Version 1.1},
+  publisher     = {OASIS},
+  year          = {2012},
+  author        = {CMIS Committee},
+  note          = {\url{http://docs.oasis-open.org/cmis/CMIS/v1.1/cs01/CMIS-v1.1-cs01.htmlx1-170001} (letzter Zugriff 24.12.2017)},
+  __markedentry = {[MMOE:1]},
+}
+
+@Book{Freidinger2004,
+  title     = {Geschäftsprozesse im Unternehmen},
+  publisher = {Burufsakademie Stuttgart},
+  year      = {2004},
+  author    = {Dr. Robert Freidinger},
+  note      = {\url{http://slideplayer.org/slide/5314020/} (letzter Zugriff 25.12.2017)},
+}
+
+@Book{Allweyer2007,
+  title     = {Das Business Process Maturity Model (BPMM) der OMG},
+  publisher = {Kurze Prozesse},
+  year      = {2007},
+  author    = {Thomas Allweyer},
+  note      = {\url{https://www.kurze-prozesse.de/2007/11/08/das-business-process-maturity-model-bpmm-der-omg/} (letzter Zugriff 25.12.2017)},
+}
+
+@Book{Liggesmeyer2002,
+  title     = {Software-Qualität: Testen, Analysieren und Verifizieren von Software},
+  publisher = {Spektrum Akademischer Verlag},
+  year      = {2002},
+  author    = {Peter Liggesmeyer},
+  isbn      = {978-3827411181},
+}
+
+@Book{Freund2012,
+  title     = {Praxishandbuch BPMN 2.0},
+  publisher = {Carl Hanser Verlag},
+  year      = {2012},
+  author    = {Jakob Freund and Bernd Rücker},
+}
+
+@Book{Group2014,
+  title     = {ABOUT THE BUSINESS PROCESS MODEL AND NOTATION SPECIFICATION VERSION 2.0.2},
+  publisher = {OMG},
+  year      = {2014},
+  author    = {Object Management Group},
+  note      = {\url{http://www.omg.org/spec/BPMN/} (letzter Zugriff 26.12.2017)},
+}
+
+@Book{Schiltz2017,
+  title     = {Die Möglichkeiten und Stärken von BPMN (Business Process Model and Notation)},
+  publisher = {Digicomp},
+  year      = {2017},
+  author    = {Dr. Serge Schiltz},
+  note      = {\url{https://news.digicomp.ch/de/2017/05/26/bpmn-business-process-model-and-notation-moglichkeiten-und-starken/} (letzter Zugriff 24.12.2017)},
+}
+
+@Book{Trovarit2017,
+  title     = {Reibungslose Prozesse},
+  publisher = {Trovarit AG},
+  year      = {2017},
+  author    = {Trovarit AG},
+  note      = {\url{http://www.trovarit.com/beratung/leistungen/prozessberatung/} (letzter Zugriff 26.12.2017)},
+}
+
+@Book{Denne2004,
+  title     = {DB2 Theorie und Praxis},
+  publisher = {DGD mbH},
+  year      = {2004},
+  author    = {Norbert Denne},
+}
+
+@Book{Geisler2011,
+  title     = {Datenbanken Grunlagen und Design},
+  publisher = {Verlagsgruppe Hüthig Jehle Rehm GmbH},
+  year      = {2011},
+  author    = {Frank Geisler},
+}
+
+@Book{Deutschland2017,
+  title     = {IBM Business Process Manager},
+  publisher = {IBM Deutschland},
+  year      = {2017},
+  author    = {IBM},
+  note      = {\url{http://www-03.ibm.com/software/products/de/business-process-manager-family} (letzter Zugriff 15.12.2017)},
+}
+
+@Book{IBM2017,
+  title     = {IBM WebSphere Application Server},
+  publisher = {IBM Deutschland},
+  year      = {2017},
+  author    = {IBM},
+  note      = {\url{https://www.ibm.com/de-de/marketplace/java-ee-runtime/details?lnk=hmproduct-header-top} (letzter Zugriff 26.12.2017)},
+}
+
+@Book{EcoDMS2017,
+  title     = {Was ist ecoDMS?},
+  publisher = {applord Holding Europe GmbH},
+  year      = {2017},
+  author    = {EcoDMS},
+  note      = {\url{https://www.ecodms.de/index.php/de/ecodms-archiv/produktbeschreibung} (letzter Zugriff 26.12.2017)},
+}
+
+@Book{Wilkiens2015,
+  title     = {Basiswissen Geschäftsprozessmanagement},
+  publisher = {dpunkt.verlag},
+  year      = {2015},
+  author    = {Tim Wilkiens and Christian Weiss and Andrea Grass and Kim Nena Duggen;},
+}
+
+@Book{FinancesOnline2017,
+  title     = {IBM BPM REVIEW},
+  publisher = {FinancesOnline.com},
+  year      = {2017},
+  author    = {FinancesOnline},
+  note      = {\url{https://reviews.financesonline.com/p/ibm-bpm/} (letzter Zugriff 02.01.2018)},
+}
+
+@Book{Ruffing2017,
+  title     = {5 Erfolgsfaktoren für eine vollständige und qualitativ hochwertige Prozessaufnahme},
+  publisher = {Prozessmaler},
+  year      = {2017},
+  author    = {Bernd Ruffing},
+  note      = {\url{http://prozessmaler.de/5-erfolgsfaktoren-fuer-eine-vollstaendige-und-qualitativ-hochwertige-prozessaufnahme/} (letzter Zugriff 03.01.2018)},
+}
+
+@Book{Angermeier2017,
+  title     = {Agiles Projektmanagement},
+  publisher = {ProjektMagazin},
+  year      = {2017},
+  author    = {Dr. Georg Angermeier},
+  note      = {\url{https://www.projektmagazin.de/glossarterm/agiles-projektmanagement} (letzter Zugriff 24.12.2017)},
+}
+
+@Book{Dipl.-Kfm.Dipl.-VolkswFrankHogrebe2009,
+  title     = {Business Process Maturity Model (BPMM): Konzeption, Anwendung und Nutzenpotenziale},
+  publisher = {Springer Professional},
+  year      = {2009},
+  author    = {Dipl.-Kfm. Dipl.-Volksw Frank Hogrebe and Prof. Dr. Markus Nüttgens},
+  volume    = {HMD Praxis der Wirtschaftsinformatik},
+  series    = {Ausgabe 2/2009},
+}
+
+@Book{Hrdina2017,
+  title     = {So erkennen Sie mögliche Schwachstellen in Ihren Prozessen auf einen Blick},
+  publisher = {Verlag für die Deutsche Wirtschaft AG},
+  year      = {2017},
+  author    = {Dr.-Ing. Jan Hrdina},
+}
+
+@Book{Datev2017,
+  title     = {DATEV Unternehmen online},
+  publisher = {Datev eG},
+  year      = {2017},
+  author    = {Datev},
+  note      = {\url{https://www.datev.de/web/de/datev-shop/komplettloesungen/datev-unternehmen-online/index.html} (letzter Zugriff 03.01.2018)},
+}
+
+@Book{Stiller2017,
+  title     = {Informationssystem},
+  publisher = {Wirtschaftslexikon24.com},
+  year      = {2017},
+  author    = {Dipl.-Kfr. Dr. Gudrun Stiller},
+  note      = {\url{http://www.wirtschaftslexikon24.com/d/informationssystem/informationssystem.htm} (letzter Zugriff 01.12.2017)},
+}
+
+@Book{Wenz2006,
+  title     = {JavaScript und AJAX: Das umfassende Handbuch},
+  publisher = {Galileo Computing},
+  year      = {2006},
+  author    = {Christian Wenz},
+  edition   = {Auflage: 7},
+  isbn      = {3898428591},
+}
+
+@Book{Feuerstack2004,
+  title     = {JavaScript in 2 Tagen},
+  publisher = {Fernuniversität Hagen},
+  year      = {2004},
+  author    = {Thomas Feuerstack},
+  note      = {\url{https://www.fernuni-hagen.de/imperia/md/content/zmi_2010/b026_javascript.pdf} (letzter Zugriff 04.01.2018)},
+}
+
+@Book{Mertens2013,
+  title     = {Integrierte Informationsverarbeitung 1},
+  publisher = {Gabler Verlag},
+  year      = {2013},
+  author    = {Peter Mertens},
+  edition   = {18},
+}
+
+@Book{Beck2001,
+  title     = {Manifesto for Agile Software Development},
+  publisher = {agilemanifesto},
+  year      = {2001},
+  author    = {Kent Beck and Mike Beedle and Arie van Bennekum and Alistair Cockburn and Ward Cunningham and Martin Fowler and James Grenning and Jim Highsmith and Andrew Hunt and Ron Jeffriesand Jon Kern and Brian Marick and Robert C. Martin and Steve Mellor and Ken Schwaber and Jeff Sutherland and Dave Thomas},
+  note      = {\url{http://agilemanifesto.org/iso/de/manifesto.html} (letzter Zugriff 04.01.2018},
+}
+
+@Book{Oestereich2008,
+  title     = {APM - Agiles Projektmanagement},
+  publisher = {spunkt.verlag},
+  year      = {2008},
+  author    = {Bernd Oestereich and Christian Weiss},
+}
+
+@Book{Toutenburg2009,
+  title     = {Six Sigma},
+  publisher = {Springer-Verlag Berlin Heidelberg},
+  year      = {2009},
+  author    = {Helge Toutenburg and Philipp Knöfel},
+}
+
+@Book{Dunie2016,
+  title     = {Magic Quadrant for Intelligent Business Process Management Suites},
+  publisher = {Gartner Inc.},
+  year      = {2016},
+  author    = {Rob Dunie and Marc Kerremans and Van L. Baker and Jason Wong},
+  note      = {\url{https://www.gartner.com/doc/3818763/magic-quadrant-intelligent-business-process} (letzter Zugriff 15.11.2017)},
+}
+
+@Article{Wolff2017,
+  author  = {Eberhard Wolff},
+  title   = {Was sind eigentlich Microservices?},
+  journal = {Jaxeter},
+  year    = {2017},
+  note    = {\url{https://jaxenter.de/was-sind-microservices-40571} (letzter Zugriff 27.01.2019)},
+}
+
+@Book{Hess2006,
+  title     = {Regeln für serviceorientierte Architekturen hoher Qualität},
+  publisher = {Informatik Spektrum},
+  year      = {2006},
+  author    = {Andreas Hess, Prof. Dr. Bernhard Humm, Dr. Markus Voß},
+  note      = {\url{https://s3.amazonaws.com/academia.edu.documents/43534513/Regeln_fr_serviceorientierte_Architektur20160309-4791-1a4xyrf.pdf?AWSAccessKeyId=AKIAIWOWYYGZ2Y53UL3A\&Expires=1549035486\&Signature=3mUa8hd454SWCTVlofQo%2FFF9vBA%3D\&response-content-disposition=inline%3B%20filename%3DRegeln_fur_serviceorientierte_Architektu.pdf} (letzter Zugriff 01.02.2019)},
+  journal   = {Informatik Spektrum},
+}
+
+@Book{Richter2017,
+  title     = {Wann liefert eine Serviceorientierte Architektur echten Nutzen?},
+  publisher = {sd\&m Research},
+  year      = {2017},
+  author    = {Dr. Jan-Peter Richter},
+  note      = {\url{http://cs.emis.de/LNI/Proceedings/Proceedings64/GI-Proceedings.64-21.pdf} (letzter Zugriff 01.02.2019)},
+}
+
+@Article{Wasson2018,
+  author  = {Mike Wasson},
+  title   = {Architekturstil für Microservices},
+  journal = {Microsoft Azure},
+  year    = {2018},
+  note    = {\url{https://docs.microsoft.com/de-de/azure/architecture/guide/architecture-styles/microservices} (letzter Zugriff: 01.02.2019)},
+}
+
+@Article{Wolff2016,
+  author  = {Eberhard Wolff},
+  title   = {Microservices - eine Bestandsaufnahme},
+  journal = {INNOQ},
+  year    = {2016},
+  note    = {\url{https://www.innoq.com/de/articles/2016/10/microservices-eine-bestandsaufnahme/} (letzter Zugriff: 06.03.2019)},
+}
+
+@Book{Wolff2015,
+  title     = {Microservices: Grundlagen flexibler Softwarearchitekturen},
+  publisher = {dpunkt},
+  year      = {2015},
+  author    = {Eberhard Wolff},
+  editor    = {978–3–8649–0313–7},
+}
+
+@Article{Litzel2018,
+  author  = {Nico Litzel},
+  title   = {Was ist ein Data Lake?},
+  journal = {BigData Insider},
+  year    = {2018},
+  month   = feb,
+  note    = {\url{https://www.bigdata-insider.de/was-ist-ein-data-lake-a-686778/} (letzter Zugriff: 08.03.2019)},
+}
+
+@Article{Little2018,
+  author  = {Arthur D. Little},
+  title   = {Management der digitalen Transformation},
+  journal = {http://www.adlittle.de/},
+  year    = {2018},
+}
+
+@Article{HarryM.Sneed2018,
+  author  = {Harry M. Sneed, Richard Seidl},
+  title   = {Digitalisierung führt zu DevOps - Moderne IT-Systeme sind nie und immer fertig},
+  journal = {OBJEKTspektrum},
+  year    = {01/2018},
+}
+
+@Misc{Group2019,
+  author = {Lufthansa},
+  title  = {LH OpenAPI testing},
+  year   = {2019},
+  note   = {\url{https://developer.lufthansa.com/io-docs} (letzter Zugriff: 07.03.2019)},
+}
+
+@Article{Dowalil03/2018,
+  author  = {Herbert Dowalil},
+  title   = {Ist SOA nun tatsächlich tot und wenn ja, wodurch wurde sie ersetzt? Digitalisierung, SOA und die Softwarekrise},
+  journal = {OBJEKTspektrum},
+  year    = {03/2018},
+}
+
+@Article{Christ2018,
+  author  = {André Christ},
+  title   = {Modernisierung Eines Monolithen - Erfahrung Beim Umstieg Auf Microservices},
+  journal = {OBJEKTspektrum},
+  year    = {05/2018},
+}
+
+@Article{Bhattacharya2019,
+  author  = {Sudi Bhattacharya},
+  title   = {Enterprise Data Lake Architecture: What to Consider When Designing},
+  journal = {Cloud Technologie Partners},
+  year    = {2019},
+  note    = {\url{https://www.cloudtp.com/doppler/how-to-guide-architecture-patterns-to-consider-when-designing-an-enterprise-data-lake/} (letzter Zugriff: 08.03.2019)},
+}
+
+@Article{Tiedemann2018,
+  author  = {Michaela Tiedemann},
+  title   = {Grundlagen, Anwendungsfälle und Vorzüge eines Data Lake: Alles was Unternehmen über Data Lakes wissen müssen},
+  journal = {alexanderthamm data science services},
+  year    = {2018},
+  note    = {\url{https://www.alexanderthamm.com/de/artikel/grundlagen-anwendungsfaelle-data-lake/} (letzter Zugriff 28.03.2019)},
+}
+
+@Article{Hardy2016,
+  author  = {Ashley-Christian Hardy},
+  title   = {Agile Team Organisation: Squads, Chapters, Tribes and Guilds},
+  journal = {Medium.com},
+  year    = {2016},
+  note    = {\url{https://medium.com/@achardypm/agile-team-organisation-squads-chapters-tribes-and-guilds-80932ace0fdc} (letzter Zugriff: 28.03.2019)},
+}
+
+@Book{Gadatsch2017c,
+  title         = {IT-Sicherheit: Digitalisierung der Gesch{\"a}ftsprozesse und Informationssicherheit},
+  publisher     = {Springer Fachmedien Wiesbaden},
+  year          = {2017},
+  author        = {Gadatsch, A. and Mangiapane, M.},
+  series        = {essentials},
+  isbn          = {9783658177133},
+  __markedentry = {[MMOE:6]},
+  url           = {https://books.google.de/books?id=dialDgAAQBAJ},
+}
+
+@Article{Despodovski2017,
+  author  = {Rade Despodovski},
+  title   = {Microservices vs. SOA – Is There Any Difference at All?},
+  journal = {DZone Integration Zone},
+  year    = {2017},
+  note    = {\url{https://dzone.com/articles/microservices-vs-soa-is-there-any-difference-at-al} (letzter Zugriff: 30.03.2019)},
+}
+
+@Article{Little2019,
+  author  = {Arthur D. Little},
+  title   = {Application Programming Interface (API)},
+  journal = {Vorlesung Management der digitalen Transformation - Dr. Richard Beetz},
+  year    = {2019},
+}
+
+@Article{Datenbanken_verstehen,
+  author  = {{Begerow Beratungsgesellschaft}},
+  title   = {Datenbanken Verstehen},
+  journal = {Datenbanken Verstehen},
+  year    = {2020},
+  url     = {https://www.datenbanken-verstehen.de/datenmodellierung/normalisierung/abhaengigkeiten-normalisierung/},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}

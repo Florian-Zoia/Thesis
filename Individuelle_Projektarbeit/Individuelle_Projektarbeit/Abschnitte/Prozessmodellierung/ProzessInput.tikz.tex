@@ -1,0 +1,27 @@
+\tikzstyle{place}=[circle, thick, draw=blue!75, fill=blue!20, minimum size=10mm, node distance = 2.3cm]
+\tikzstyle{transition}=[rectangle, rounded corners, thick, draw=black!75, fill=black!20, minimum height=1cm, minimum width = 2.3cm, node distance = 2.3cm, align=left]
+
+\begin{scope}
+	\node[transition](read){Daten aus\\Protokolldatei};
+	
+	\node[place, right of=read](p1){}
+		edge[pre, line width=1.5pt] (read);
+		
+	\node[transition, above of=p1, right of=p1](stadis){Ist STADIS}
+		edge[pre, line width=1.5pt] (p1);
+	
+	\node[transition, below of=p1, right of=p1](xml){Ist XML}
+		edge[pre, line width=1.5pt] (p1);
+	
+	\node[place, right of=stadis](p2){}
+		edge[pre, line width=1.5pt] (stadis);
+	\node[transition, right of=p2](end){STADIS Extraktion}
+		edge[pre, line width=1.5pt] (p2){};
+
+	\node[place, right of=xml](p3){}
+		edge[pre, line width=1.5pt] (xml);
+	\node[transition, right of=p3](end){XML Extraktion}
+		edge[pre, line width=1.5pt] (p3){};
+	
+
+\end{scope}

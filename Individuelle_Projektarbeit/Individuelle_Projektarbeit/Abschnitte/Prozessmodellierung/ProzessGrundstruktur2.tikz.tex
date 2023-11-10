@@ -1,0 +1,24 @@
+\tikzstyle{place}=[circle, thick, draw=blue!75, fill=blue!20, minimum size=10mm, node distance = 2.5cm]
+\tikzstyle{transition}=[rectangle, rounded corners, thick, draw=black!75, fill=black!20, minimum height=1cm, minimum width = 2.3cm, node distance = 2.5cm]
+
+\begin{scope}
+	\node [transition](input) {Input};
+
+	\node [place, right of = input](p2) {}
+		edge [pre, line width =1.5pt] (input);
+	
+	\node [transition, right of= p2](transform) {Transformation}
+		edge [pre, line width =1.5pt] (p2);
+	
+	\node [place, right of = transform](p3) {}
+		edge [pre, line width =1.5pt] (transform);
+	
+	\node [transition, right of = p3](extraction2) {Extraktion 2}
+		edge [pre, line width =1.5pt] (p3);
+	
+	\node [place, below  of = extraction2](p4) {}
+		edge [pre, line width =1.5pt] (extraction2);
+	
+	\node [transition, below of = p4] (output) {Output}
+		edge [pre, line width =1.5pt] (p4);
+\end{scope}

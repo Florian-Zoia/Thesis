@@ -1,0 +1,166 @@
+\documentclass[12pt]{article}
+\usepackage{rotating}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{here}
+\usepackage{listings} 
+\lstset{language=XML} 
+\lstset{numbers=left, numberstyle=\tiny, numbersep=5pt} \lstset{language=Perl}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{tabularx}
+\usepackage{booktabs, multicol, multirow}
+\usepackage{rotating}
+\usepackage{bigstrut}
+\usepackage{svg}
+\usepackage{wrapfig}
+\usepackage{pdfpages} 
+\usepackage{floatflt}
+\usepackage{amsmath, amssymb}
+\usepackage[printonlyused]{acronym} 
+\usepackage{textcomp}
+
+\lstdefinelanguage{JavaScript}{
+	keywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break},
+	keywordstyle=\color{blue}\bfseries,
+	ndkeywords={class, export, boolean, throw, implements, import, this},
+	ndkeywordstyle=\color{darkgray}\bfseries,
+	identifierstyle=\color{black},
+	sensitive=false,
+	comment=[l]{//},
+	morecomment=[s]{/*}{*/},
+	commentstyle=\color{purple}\ttfamily,
+	stringstyle=\color{red}\ttfamily,
+	morestring=[b]',
+	morestring=[b]",
+	extendedchars=true,
+	basicstyle=\footnotesize\ttfamily,
+	showstringspaces=false,
+	showspaces=false,
+	numbers=left,
+	numberstyle=\footnotesize,
+	numbersep=9pt,
+	tabsize=2,
+	breaklines=true,
+	showtabs=false,
+	captionpos=b
+}
+
+\lstset{literate=%
+	{Ö}{{\"O}}1
+	{Ä}{{\"A}}1
+	{Ü}{{\"U}}1
+	{ß}{{\"ss}}1
+	{ü}{{\"u}}1
+	{ä}{{\"a}}1
+	{ö}{{\"o}}1
+	{~}{{\textasciitilde}}1
+}
+
+%\usepackage{hyperref}
+\usetikzlibrary{arrows,shapes,snakes,automata,backgrounds,petri}
+\lstdefinestyle{base}{
+  language=xml,
+  emptylines=1,
+  breaklines=true,
+  basicstyle=\ttfamily\color{black},
+  moredelim=**[is][\color{red}]{@}{@},
+}
+
+
+\newcommand{\autorPraxisbericht}{Malte Möller}
+\newcommand{\titelPraxisbericht}{Entwicklung und Pilotierung eines digitalisierten Zeiterfassungsprozesses für das Unternehmen COM Software GmbH}
+\newcommand{\titelVeranstaltung}{{\sl Exposé}}
+\newcommand{\ersterBetreuer}{Prof.\ Dr.\ Martin Przewloka}
+\newcommand{\zweiterBetreuer}{Prof.\ Dr.\ rer.\ nat.\ Martin Rupp}
+\newcommand{\dritterBetreuer}{Helmut Röse}
+\newcommand{\vierterBetreuer}{Dennis Panz}
+\newcommand{\abgabeortPraxisbericht}{Frankfurt am Main}
+\newcommand{\datumAbgabePraxisbericht}{1.\ April 2017}
+
+
+\input{EinstellungenAllgemein.utf8.tex}
+\newcommand{\spw}{StaffIT pro web}
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+
+\newpage
+\pagestyle{headings}
+
+
+\input{./Abschnitte/Erklärungen.tex}
+
+\pagestyle{headings}
+
+\newpage
+\section*{}
+	\tableofcontents
+\newpage
+\addcontentsline{toc}{section}{Abbildungsverzeichnis}
+\listoffigures
+\newpage
+\addcontentsline{toc}{section}{Tabellenverzeichnis}
+\listoftables
+\addcontentsline{toc}{section}{Listing-Verzeichnis}
+\lstlistoflistings
+
+\newpage
+\input{./Abkürzungsverzeichnis.tex}
+
+\newpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\section{Einleitung}
+Jede Organisation nutzt gewisse Prozesse um den betrieblichen Alltag und das dazugehörige Geschäft abzuwickeln. Diese Prozesse können in den unterschiedlichsten Formen abgebildet sein. Zum einen können die Prozesse einfach nur nach bestem Wissen und Gewissen gelebt werden, ganz nach dem Motto \flqq so wie es schon immer war\frqq. Eine erste Ausbaustufe ist der dokumentierte Prozess. Es ist also beschrieben, wie der jeweilige Ablauf normalerweise ausgestaltet sein soll. Im Optimalfall wurde dieser sogar schon analysiert und zu dem bestmöglichen Prozess optimiert. Doch reicht das für einen erfolgreichen Betrieb oder Bedarf es hier weiterer Aktionen?
+\subsection{Erläuterung}
+Es gibt immer Wege und Möglichkeiten etwas zu Verbessern. Mit dem Zeitalter der Digitalisierung sind unterstützende Software-Lösungen meist der Schlüssel zur Optimierung. Auf Prozesse bezogen kann dies beispielsweise die Softwareunterstützung einiger Teilaufgaben sein, oder sogar die gesamte Digitalisierung aller Prozessschritte in einem System. Um allerdings ein solches zu implementieren, sind wiederum Informationen von und für andere Systeme von großer Relevanz. Es müssen Schnittstellen erstellt und integriert werden. Um dies zu gewährleisten, muss der IST-Zustand mit den damit verbundenen Problemstellungen detailliert definiert sein. Diese Arbeit soll den IST-Prozess der Arbeitszeiterfassung im Gesamtkonzept eingliedern und bestmöglich beschreiben. Nach anschließender Analyse kann die Entwicklung eines Prototypen starten. 
+\subsection{Betrieblicher Kontext} \label{betrieb}
+Die \textit{COM Software GmbH} ist ein mittelständischer IT-Dienstleister mit Sitz im Rhein-Main-Gebiet. Der Branchenfokus der europaweiten Kunden liegt bei Banken und Finanzdienstleistern beziehungsweise deren teilweise ausgegliederten Rechenzentren und IT-Sparten. \\
+Das Unternehmen wurde im Jahr 1996 als GmbH von zwei Gesellschaftern gegründet und wird von Herrn Helmut Röse geleitet. Es werden 2017 zum Jahresende 130 Mitarbeiter beschäftigt, davon ein Teil festangestellt und ein Teil freiberuflich. \\
+Die Schwerpunkte der Beratungstätigkeit liegen bei der Softwareentwicklung und System\-administration sowie der Konzeption und Implementierung von individuellen Softwarearchitekturen. Abgerundet wird das Portfolio durch ein Angebot von Lösungen im Bereich der Beratungsleistung zur zielgerichteten Informationsversorgung von Organisationseinheiten im Rahmen von Data-Warehouse und Business-Intelligence. \\
+Im Bereich der Digitalisierung ist die COM Software GmbH mit Sicherheit am Puls der Zeit, da viel Wert auf aktuelles Wissen gelegt wird. In den Bereichen Geschäftsprozessmanagement und Dokumentenmanagement sind bereits Systeme implementiert. Einige Prozesse, wie beispielsweise der Onboarding Prozess sind modelliert, in die Organisation integriert und werden gelebt. 
+\subsection{Sensibilisierung des Themas}
+Auch bei der COM Software GmbH gibt es ein hohes Maß an Optimierungspotential. Eine Prozesslandkarte ist erstellt, auf welcher die unterschiedlichsten betrieblichen Prozesse abgebildet sind. Einer dieser Prozesse ist die Arbeitszeiterfassung, welche in direktem Zusammenhang zu dem Rechnungslegungsprozess steht. Jeder Berater welcher im Kundenprojekt tätig ist, muss am Ende eines jeden Monats für seine Projekte Daten bei der COM Software GmbH für die Stundenabrechnung einreichen. Die Kerninformationen spiegeln sich in zwei Dokumenten, dem Stundennachweis und der Beraterrechnung wieder. Diese Dokumente werden zum aktuellen Zeitpunkt per Post oder Mail zur COM Software GmbH gesendet. Identifiziertes Problem ist, dass dieser Dateneingang kein einheitlichen Kommunikationsweg und kein einheitliches Format besitzt. Deshalb ist auch die einheitliche Weiterverarbeitung mit Systemunterstürzung ohne große manuellen Tätigkeiten unmöglich. Genau dieses Problem soll durch die Standardisierung und Digitalisierung des Informationseingangs mithilfe einer Applikation gelöst werden.
+\subsection{Ziel der Arbeit}
+Das Projekt hat ein klar definiertes Ziel. Es soll ein testfähiger Prototyp entstehen, welcher alle relevanten Daten für die Weiterverarbeitung in einem System konsolidiert. Jeder Berater soll die Informationen auf der einheitlichen Plattform eintragen. Eine hohe User Akzeptanz muss durch die Applikation sichergestellt werden. Deshalb sollen Grundinformationen von vornherein geladen und dem Nutzer zur Verfügung gestellt werden. Durch Schnittstellen zu Fremdsystemen sollen personalisierte Auswahlmöglichkeiten vorkonfiguriert und der gesamte Informationsgehalt aufbereitet werden. Durch Kennzahlen soll der IST-Prozess mit dem optimierten Prozess verglichen werden. 
+\subsection{Aufbau der Arbeit}
+Bei dem in Absatz \ref{betrieb} beschriebenen Onboarding Prozess ist schon ein spürbarer Mehrwert gegenüber der ursprünglichen Checkliste in Form eines Blatt Papiers zu erkennen. \\
+Um den Prozess der Arbeitszeiterfassung und Verarbeitung zu Digitalisieren, wird der Inhalt dieser Arbeit in mehrere Stufen untergliedert. Zum Einen soll eine breite Grundlagenforschung und entsprechende Statistiken den aktuellen Stand der Digitalisierung, insbesondere in Bezug auf Geschäftsprozessmanagement und Dokumentenmanagement, darlegen. \\
+Im nächsten Schritt soll der Ist-Prozess erhoben, bewertet und der optimierte Soll-Prozess entwickelt werden. Ist der Prozess final modelliert und mit dem Kunden abgestimmt, geht es in die Umsetzungsphase um einen Piloten zu entwickeln. In diesem konkreten Prozess gilt die Fachabteilung der Abrechnung als Kunde und wird in ständigem Austausch die Qualität der Lösung bestätigen. \\
+Während der Umsetzung muss die Frage der richtigen Technologie anhand methodischer Analyse geklärt werden. Wichtig sind hier besonders die Aspekte Datensicherheit und Zugriffsschutz, da es sich um sensible Personenbezogene Daten handelt. \\
+Abschließend wird der Pilot mit Kennzahlen, wie zum Beispiel den Prozesskosten und der Durchlaufzeit bewertet. Hierfür wird die Fachseite sowohl den Ist-Zustand als auch den Soll-Zustand nach erfolgreicher Implementierung der Lösung in Bezug auf die benötigten Ressourcen messen.
+\subsection{Forschungsmethode}
+Die Grundlage für ein erfolgreiches Projekt ist die korrekte und vor allem vollständige Aufnahme der IST-Situation. Nur anhand dieser kann ein hohes Optimierungsmaß erreicht werden. Sobald der IST-Zustand methodisch aufgenommen ist, wird dieser Analysiert und der SOLL-Zustand modelliert. Das Ergebnis soll anschließend in Form eines Prototypen entwickelt und vertestet werden.   
+
+
+
+\input{./Abschnitte/Grundlagen.tex}
+
+\input{./Abschnitte/Ist-Zustand.tex}
+
+
+\input{./Abschnitte/Technologie.tex}
+
+\input{./Abschnitte/prototyp.tex}
+
+\input{./Abschnitte/Fazit.tex}
+
+
+
+
+	\newpage
+
+\pagenumbering{roman}
+\setcounter{page}{4}
+\bibliographystyle{hc-de} %
+
+\addcontentsline{toc}{section}{Literatur} %
+\bibliography{./Literaturverzeichnis} %
+
+
+\input{./Abschnitte/Anhang.tex}
+\end{document}

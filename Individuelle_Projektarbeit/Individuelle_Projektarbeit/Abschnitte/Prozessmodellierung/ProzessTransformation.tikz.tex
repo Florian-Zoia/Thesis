@@ -1,0 +1,34 @@
+\tikzstyle{place}=[circle, thick, draw=blue!75, fill=blue!20, minimum size=10mm, node distance = 2.3cm]
+\tikzstyle{transition}=[rectangle, rounded corners, thick, draw=black!75, fill=black!20, minimum height=1cm, minimum width = 2.3cm, node distance = 2.3cm, align=left]
+
+\begin{scope}
+	\node[transition](get){Daten aus\\Extraktion};
+	
+	\node[place, right of=get](p1){}
+	edge[pre, line width=1.5pt](get){};
+	
+	\node[transition, right of=p1](seperate){Datensätze\\erkennen}
+	edge[pre, line width=1.5pt](p1){};
+	
+	\node[place, right of=seperate](p2){}
+	edge[pre, line width=1.5pt](seperate);
+	
+	\node[transition, right of=p2](build){Schreiben in Tag}
+	edge[pre, line width=1.5pt](p2);
+	
+	\node[place, right of=build](p3){}
+	edge[pre, line width=1.5pt](build);
+	\node[place, above of=build](p4){}
+	edge[pre, line width=1.5pt](build);
+	
+	\node[transition, right of=p3](create){XML erstellen}
+	edge[pre, line width=1.5pt](p3);
+	
+	\node[transition, left of=p4](next){Erneute Erkennung\\von Tags}
+	edge[pre, line width=1.5pt](p4);
+	
+	\node[place, left of=next](p5){}
+	edge[pre, line width=1.5pt](next)
+	edge[post, line width=1.5pt](seperate);
+	
+\end{scope}

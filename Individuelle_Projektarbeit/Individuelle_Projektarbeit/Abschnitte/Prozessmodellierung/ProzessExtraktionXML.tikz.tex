@@ -1,0 +1,50 @@
+\tikzstyle{place}=[circle, thick, draw=blue!75, fill=blue!20, minimum size=10mm, node distance = 2.5cm]
+\tikzstyle{transition}=[rectangle, rounded corners, thick, draw=black!75, fill=black!20, minimum height=1cm, minimum width = 2.3cm, node distance = 2.5cm, align=left]
+
+\begin{scope}
+	\node[transition](einlesen){Einlesen XML\\in SAS};
+	
+	\node[place, right of=einlesen](p0){}
+		edge[pre, line width=1.5pt](einlesen);
+	\node[transition, right of=p0](filename){XML mit Filename\\referenzieren}
+		edge[pre, line width=1.5pt](p0);
+	\node[place, below of=filename, yshift=1cm](p1){}
+		edge[pre, line width=1.5pt](filename);
+	\node[transition, below of=p1, yshift=1cm](mappen){XML Datei\\referenzieren}
+		edge[pre, line width=1.5pt](p1);
+	\node[place, below of =mappen, yshift=1cm](p2){}
+		edge[pre, line width=1.5pt](mappen);
+	\node[transition, below of=p2, yshift=1cm](einlesen2){XML-Bibliothek erstellen}
+		edge[pre, line width=1.5pt](p2);
+	\node[place, below of = einlesen2, yshift=1cm](p3){}
+		edge[pre, line width=1.5pt](einlesen2);
+	\node[transition, below of=p3, yshift=1cm](question){Datensatz vorhanden?}
+		edge[pre, line width=1.5pt](p3);
+	\node[place, below of=question, yshift=1cm](p4){}
+		edge[pre, line width=1.5pt](question);
+	\node[transition, below of=p4, right of = p4, yshift=1cm](yes){Ja}
+		edge[pre, line width=1.5pt](p4);
+	\node[place, below of=yes, yshift=1cm](p41){}
+		edge[pre, line width=1.5pt](yes);
+%	\node[transition, below of=p41, yshift=1cm](need){Im Code definiert?}
+%		edge[pre, line width=1.5pt](p41);
+%	\node[place, below of=need, yshift=1cm](p42){}
+%		edge[pre, line width=1.5pt](need);
+%	\node[transition, below of=p42, left of = p42, yshift=1cm](yes2){Ja}
+%		edge[pre, line width=1.5pt](p42);
+%	\node[place, left of=yes2](p43){}
+%		edge[pre, line width=1.5pt](yes2);
+	\node [transition,below of=p41, yshift=1cm](write){Datensatz in Input-\\Tabellen übertragen}
+		edge[pre, line width=1.5pt](p41)
+		edge[post, bend right=100, line width=1.5pt](p3);
+%	\node[transition, below of=p42, right of = p42, yshift=1cm](no2){Nein}
+%		edge[pre, line width=1.5pt](p42)
+%		edge[post, bend right=40, line width=1.5pt](p3);
+		
+	\node[transition, below of=p4, left of = p4, yshift=1cm](no){Nein}
+		edge[pre, line width=1.5pt](p4);
+	\node[place, below of =no, yshift=1cm](p5){}
+		edge[pre, line width=1.5pt](no);
+	\node[transition, below of=p5, yshift=1cm](end){Ende der\\Extraktion}
+		edge[pre, line width=1.5pt](p5);
+\end{scope}

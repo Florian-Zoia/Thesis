@@ -1,0 +1,118 @@
+\usepackage[ngerman]{babel}
+\usepackage{times}
+\usepackage{natbib}
+\usepackage{pdfpages}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{svg}
+\usepackage{eurosym}
+\usepackage{txfonts}
+\usepackage{pifont}
+\usepackage{url}
+\usepackage{colortbl}
+\urlstyle{tt}
+\usepackage{tikz}
+\usepackage{pgflibrarysnakes}
+\usetikzlibrary{shadows,fadings}
+\usetikzlibrary{decorations}
+\usetikzlibrary{arrows} % LATEX and plain TEX when using Tik Z
+
+
+%\usepackage[paper=a4paper, 
+%%outer=15mm, 
+%%inner=30mm, 
+%%top=40mm, 
+%%bottom=25mm, 
+%bindingoffset=10mm]{geometry} 
+
+
+
+\definecolor{white}{gray}{1.00}
+\definecolor{black}{gray}{0.00}
+\definecolor{skyblue}{cmyk}{0.4, 0.2, 0.0, 0.0}             % HKS44-40
+\definecolor{blue}{cmyk}{1.0, 0.5, 0.0, 0.0}                % HKS44-100
+\definecolor{lightblue}{cmyk}{0.7, 0.35, 0.0, 0.0}          % HKS44-70
+\definecolor{darkblue}{rgb}{0.04, 0.16, 0.32}               % 
+\definecolor{extradarkblue}{cmyk}{1.00, 0.70, 0.10, 0.50}   % HKS41-100
+\definecolor{darkgreen}{cmyk}{1.0, 0.0, 0.9, 0.2}           % HKS57-100
+\definecolor{green}{cmyk}{0.65, 0.0, 1.0, 0.0}              % HKS65-100
+\definecolor{purple}{cmyk}{0.5, 1.0, 0.0, 0.0}              % HKS33-100
+\definecolor{indigo}{cmyk}{0.8, 0.9, 0.0, 0.0}              % HKS36-100
+\definecolor{gray}{gray}{0.59}
+\definecolor{lightgray}{gray}{0.4}
+\definecolor{darkgray}{gray}{0.50}
+\definecolor{darkcyan}{cmyk}{0.87, 0.4, 0.4, 0.0}
+\definecolor{cyan}{cmyk}{0.78, 0.19, 0.01, 0.0}
+\definecolor{lightcyan}{cmyk}{0.39, 0.095, 0.005, 0.0}
+\definecolor{extralightcyan}{cmyk}{0.16, 0.1, 0.0, 0.0}
+\definecolor{beetleBlue}{RGB}{64,80,127}
+
+\usepackage[
+colorlinks=false,
+urlcolor=black,
+linkcolor=black
+]{hyperref}
+
+\setlength{\textwidth}{15.5cm}     %
+\setlength{\textheight}{23cm}      %
+\setlength{\evensidemargin}{0cm} %
+\setlength{\oddsidemargin}{0.95cm}  %
+\setlength{\topmargin}{-1cm}       %
+\setlength{\topskip}{0cm}          %
+\setlength{\headheight}{11pt}      %
+
+
+
+%\setlength{\textwidth}{15.5cm}     %
+%\setlength{\textheight}{23cm}      %
+%\setlength{\evensidemargin}{1.5cm} %
+%\setlength{\oddsidemargin}{1.5cm}  %
+%\setlength{\topmargin}{-1cm}       %
+%\setlength{\topskip}{0cm}          %
+%\setlength{\headheight}{11pt}      %
+
+
+\title{%
+	\titelPraxisbericht\\%
+	\vspace{8mm}{\large Bachelorthesis im Studiengang}\\%
+	{\LARGE Bachelor Business Information Management}\\%
+	{\large an der}\\%
+	{\LARGE Provadis - School of International}\\%
+	{\LARGE Management and Technology}\\%
+}
+
+\author{%
+	{\normalsize vorgelegt von}\\%
+	\vspace{4mm}\autorPraxisbericht\\%
+	{\normalsize im Fach}\\
+	{\LARGE \fach}\\
+	\vspace{4mm}~\\{\normalsize Betreuer}\\%
+	\ersterBetreuer}
+
+\date{
+	\vfill\abgabeortPraxisbericht, \datumAbgabePraxisbericht\\%
+	~\\%
+	\includegraphics[scale=.75]{ComLogo.png}\hfil
+	\includegraphics[scale=.22]{ProvadisLogo.png}%
+}
+
+
+\newcommand{\Lab}[3] { %
+ \put(#1,#2){\makebox(0,0){\shortstack[c]{#3}}}%
+}
+
+\newcommand{\lb}{\linebreak}%
+\newcounter{wMinipage}%
+\newcommand{\tiktxt}[4]{%
+\setcounter{wMinipage}{#3*\real{1.3}}
+\draw(#1 mm,#2 mm) node {\begin{minipage}{\thewMinipage mm}\begin{center}\setlength{\baselineskip}{2.5ex} #4\end{center}\end{minipage}};%
+}%
+\newcommand{\rtiktxt}[5]{%
+\setcounter{wMinipage}{#3*\real{1.3}}
+\draw(#1 mm,#2 mm) node[rotate=#5] {\begin{minipage}{\thewMinipage mm}\begin{center}\setlength{\baselineskip}{2.5ex} #4\end{center}\end{minipage}};%
+}%
+
+
+
+

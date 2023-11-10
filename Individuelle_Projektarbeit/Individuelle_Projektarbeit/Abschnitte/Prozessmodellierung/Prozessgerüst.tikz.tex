@@ -1,0 +1,22 @@
+
+\tikzstyle{place}=[circle, thick, draw=blue!75, fill=blue!20, minimum size=10mm, node distance = 2.3cm]
+\tikzstyle{transition}=[rectangle, rounded corners, thick, draw=black!75, fill=black!20, minimum height=1cm, minimum width = 2.3cm, node distance = 2.3cm, align=left]
+
+\begin{scope}
+
+	\node[transition] (input) {Input};
+	
+	\node[place, right of = input](p0){}
+		edge[pre, line width = 1.5pt](input);
+	
+	\node [transition, right of = p0](leistung){Leistung}
+		edge[pre, line width = 1.5pt](p0);
+		
+	\node[place, right of = leistung](p1){}
+		edge[pre, line width = 1.5pt](leistung);
+		
+	\node [transition, right of = p1](output){Output}
+		edge[pre, line width = 1.5pt](p1);
+		
+\end{scope}
+

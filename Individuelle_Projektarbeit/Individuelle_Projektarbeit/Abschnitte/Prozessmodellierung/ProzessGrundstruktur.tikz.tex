@@ -1,0 +1,30 @@
+\tikzstyle{place}=[circle, thick, draw=blue!75, fill=blue!20, minimum size=10mm, node distance = 2.5cm]
+\tikzstyle{transition}=[rectangle, rounded corners, thick, draw=black!75, fill=black!20, minimum height=1cm, minimum width = 2.3cm, node distance = 2.5cm, align = left]
+
+\begin{scope}
+	\node [transition](input) {Input};
+
+	\node [place, right of = input](p2) {}
+		edge [pre, line width =1.5pt] (input);
+	
+	\node [transition, right of= p2](read) {Extraktion in SAS}
+		edge [pre, line width =1.5pt] (p2);
+	
+	\node [place, right of = read](p3) {}
+		edge [pre, line width =1.5pt] (read);
+	
+	\node [transition, right of = p3](database) {Transformation mit\\SAS}
+		edge [pre, line width =1.5pt] (p3);
+	
+	\node [place, below  of = database, yshift = 1cm](p4) {}
+		edge [pre, line width =1.5pt] (database);
+	
+%	\node [transition, below of = p4, yshift = 1cm] (extraction) {Extraktion}
+%		edge [pre, line width =1.5pt] (p4);
+		
+%	\node[place, left of = extraction](p5){}
+%		edge[pre, line width = 1.5pt](extraction);
+	
+	\node[transition, left of = p4](upload){Upload in\\SAS-DWH}
+		edge[pre, line width = 1.5pt](p4);
+\end{scope}

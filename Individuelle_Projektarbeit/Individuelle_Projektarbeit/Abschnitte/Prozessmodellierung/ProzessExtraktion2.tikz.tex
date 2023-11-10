@@ -1,0 +1,42 @@
+\tikzstyle{place}=[circle, thick, draw=blue!75, fill=blue!20, minimum size=10mm, node distance = 2.3cm]
+\tikzstyle{transition}=[rectangle, rounded corners, thick, draw=black!75, fill=black!20, minimum height=1cm, minimum width = 2.3cm, node distance =2.3cm, align=left]
+
+\begin{scope}
+	\node[transition](get){Daten von\\Transformation};
+	
+	\node[place, right of=get](p1){}
+		edge[pre, line width=1.5pt](get);
+	
+	\node[transition, right of=p1, above of=p1](at1){Element 1}
+		edge[pre, line width=1.5pt](p1);	
+	\node[transition, right of=p1](at2){Element 2}
+		edge[pre, line width=1.5pt](p1);	
+	\node[transition, right of=p1, below of=p1](at3){Element 3}
+		edge [pre, line width=1.5pt] (p1);
+	
+	\node[place, right of=at1](p11){}
+		edge[pre, line width=1.5pt](at1);
+	\node[transition, right of=p11](load1){Daten laden}
+		edge[pre, line width=1.5pt](p11);
+	\node[place, right of=load1](p12){}
+		edge[pre, line width=1.5pt](load1);
+	
+	\node[place, right of=at2](p21){}
+		edge[pre, line width=1.5pt](at2);
+	\node[transition, right of=p21](load2){Daten laden}
+		edge[pre, line width=1.5pt](p21);
+	\node[place, right of=load2](p22){}
+		edge[pre, line width=1.5pt](load2);
+	
+	\node[place, right of=at3](p31){}
+		edge[pre, line width=1.5pt](at3);
+	\node[transition, right of=p31](load3){Daten laden}
+		edge[pre, line width=1.5pt](p31);
+	\node[place, right of=load3](p32){}
+		edge[pre, line width=1.5pt](load3);
+	
+	\node[transition, right of=p22](last){NEXT STEP}
+		edge[pre, line width=1.5pt](p12)
+		edge[pre, line width=1.5pt](p22)
+		edge[pre, line width=1.5pt](p32);
+\end{scope}

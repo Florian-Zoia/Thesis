@@ -1,0 +1,174 @@
+
+\section{Prozessmodellierung (TH)}\label{sec:Prozessmodellierung}
+
+	
+	Ein Prozess ist generell nach dem Gerüst in Abbildung \ref{fig:Gerüst} aufgebaut.
+	Das heißt, dass ein Prozess immer aus mindestens den drei Elementen \textit{Input}, \textit{Leistung} und \textit{Output} besteht.
+	
+	Um einen Prozess starten zu können, ist es notwendig den Auslöser und den \textit{Input} für den Prozess zu definieren.
+	Der Auslöser beschreibt ein Ereignis, nach dessen Eintritt der Prozess startet und in den ersten Schritt übergeht.
+	Dieser beläuft sich auf das Einlesen des \textit{Inputs}, der definiert welche Daten für die nachfolgende Leistung benötigt werden.
+	
+	Die \textit{Leistung} liefert aus gegebenen Daten ein Ergebnis, dass das Ziel hat die Anforderungen an den Prozess, bzw. den von Kunden erwartetem Output, eindeutig zu erbringen.
+	Eindeutig heißt in diesem Fall, dass der \textit{Output} des Prozesses genau das angefragte Ergebnis liefert.
+	Sind die Anforderungen erfüllt, ist die \textit{Leistung} des Prozesses als positiv zu bewerten. 
+
+	Der \textit{Output} beschreibt das Ergebnis des Prozesses, bzw. das Ergebnis der erbrachten \textit{Leistung}.
+	Ein \textit{Output} eines Prozess kann als physisches Produkt, immaterielles Produkt oder als Informationsergebnis vorliegen.
+	Ein physisches Produkt beschreibt ein greifbares Ergebnis, wie ein Auto, welches als Endprodukt eines Produktionsprozess entsteht.
+	Als immaterielles Produkt, welches nicht greifbar ist, gilt beispielsweise ein getipptes Wort.
+	Ergebnisse, die als Informationen vorliegen, sind die Informationsergebnisse. 
+	Solche Ergebnisse liefern beispielsweise Informationen, die für eine Erstellung eines Datawarehouse notwendig sind.
+	Diese Daten, bzw. Informationen, werden für eine weitere Bearbeitung oder Analyse bereitgestellt.
+	\\vgl. \citep{Knuppertz2012}
+		
+	
+	\subsection{Prozessentwicklung}
+ 	 	Bei einer Analyse von Daten ist es notwendig, dass lediglich Daten analysiert werden, welche für das Endergebnis Relevanz beinhalten.
+ 	 	Diese Daten werden in einem Datawarehouse abgelegt. 
+ 	 	Im Folgenden wird die Entwicklung des Prozesses zur Gewinnung der relevanten Informationen beschrieben. 
+ 	 	Als Grundlage dient die Protokolldatei des \textit{KOMT} Systems, da diese alle relevanten Daten für die Entwicklung des Datawarehouse beinhaltet. 
+ 	 	Der Prozess wird nach Abbildung \ref{fig:Gerüst} aufgebaut und erweitert.
+ 
+		\begin{figure}[htbp]
+				\TikZGraphic{./Abschnitte/Prozessmodellierung/ProzessGerüst.tikz.tex}
+				\caption{Gerüst eines Prozess}
+				\label{fig:Gerüst}
+		\end{figure}
+		
+		\subsubsection{Grundlegende Prozessstruktur}
+			Die Grundstruktur in Abbildung \ref{fig:Grundstruktur} modelliert nicht den endgültigen Prozess, sondern zeigt welche einzelnen Elemente im späteren Verlauf modelliert und implementiert werden. 
+			Im folgendem wird dieses Modell beschrieben. 
+		
+			Ziel ist es, die Daten aus STADIS und XML via SAS (Definition in Kapitel \ref{sec:SAS}) zu analysieren. Um dies zu erreichen werden die in SAS eingelesenen Datensätze mit SAS Code analysiert und extrahiert. 
+			Danach werden die extrahierten Daten mit SAS in ein zentral entwickeltes Datenmodell transformiert und als Datawarehouse bereitgestellt. 
+
+			\begin{figure}[htbp]
+				\TikZGraphic{./Abschnitte/Prozessmodellierung/ProzessGrundstruktur.tikz.tex}
+				\caption{Grundstruktur des Prozess}
+				\label{fig:Grundstruktur}
+			\end{figure}		
+		\subsubsection{Erweiterte Prozessstruktur}\label{sec:ProzessErweitert}
+			SAS ist eine Software, die dafür ausgelegt ist große Datenmengen zu verarbeiten und auszuwerten. 
+			Zwischen STADIS und XML ist in der Bearbeitung eine Unterscheidung zu machen. 
+			Im Gegensatz zu STADIS, welche in den Grundlagen (Kapitel \ref{sec:Grundlagen}) als Blocksatz getrennt ASCII Datei beschrieben wird, ist XML ein komplexer Datentyp.
+			
+			Die Beschaffenheit von STADIS ermöglicht das Einlesen bestimmter Abschnitte der Zeichenkette durch SAS. 
+			Demnach folgt eine Extraktion von Datensätze innerhalb von SAS durch SAS-Base Code mit dessen Hilfe die relevante Abschnitte bestimmt werden.
+			Welche Sätze für diesen Schritt gebraucht werden, ist in Kapitel \ref{sec:Datenmodellierung} beschrieben. 
+			Diese extrahierten Abschnitte stellen die Daten dar, die innerhalb des weiteren Prozess in das einheitliche Datenmodell transformiert werden.
+			
+			Um die relevanten Daten aus einem XML-Dokument zu extrahieren, wird eine Map zu der XML-Datei benötigt. 
+			Diese Datei wird mit einer XML Mapper Software erstellt und händisch bearbeitet, um die notwendigen Informationen zu erfassen. \\
+			Bei der Verarbeitung von XML kann SAS nur die kompletten XML Datensätze \textit{mappen}, bzw. diese einlesen. 
+			Beim Vorgang des mappens werden nur die Daten extrahiert, mit denen das zentrale Datenmodell geladen wird.
+		
+		\subsubsection{Endgültige Prozessstruktur}
+		\label{endprozess}
+		
+			Die in Kapitel \ref{sec:ProzessErweitert} beschriebenen Prozessabläufe liefern nur relevante Daten. 
+			Diese Daten liegen noch nicht in dem Datawarehouse vor. 
+			Ziel des nächsten Schritts ist es nun diese Daten, nach der Transformation, separat in ein zentrales Datawarehouse einzuspeisen (Abbildung \ref{fig:ErweiterteStruktur}). 
+			
+			Die Schwierigkeit in diesem Abschnitt liegt darin, dass die Spalten innerhalb der einzelnen Tabellen unterschiedliche betitelt sind. 
+			Zum Überwinden dieses Problems ist es notwendig, die einzelnen Tabellen miteinander zu vergleichen und die jeweiligen Elemente einander zuzuordnen.
+			Der Programmcode, entsprechend der aufgestellten Logik, lässt sich innerhalb von SAS-Base implementieren. 
+			
+			In dem vorangegangenem Schritt wurde beschrieben, dass die Informationen der XML- und STADIS-Datensätze in das zentrale Datenmodell eingespeist werden. 
+			XML und STADIS benutzen dasselbe Datenmodell, haben jedoch ihre eigenen Prozessstränge. 
+			Wo der Unterschied in den Modellen besteht wurde im Kapitel Datenmodellierung beschrieben.
+			Nach dem Schritt des Ladens gibt es dieselbe Tabelle in zweifacher Ausführungen. 
+			Diese beiden Modelle bilden zusammen das Datawarehouse. 
+			Innerhalb dieses Datawarehouse gibt es nun dieselbe Tabelle in zweifacher Ausführung. 
+			Nun ist es möglich auf diese beiden Tabellen Analysen auf den Inhalt laufen zu lassen.
+			
+			\begin{figure}[htbp]
+						\TikZGraphic{./Abschnitte/Prozessmodellierung/ProzessErweitert.tikz.tex}
+						\caption{Prozessstruktur}
+						\label{fig:ErweiterteStruktur}
+			\end{figure}
+	\subsection{Prozess des Inputs}
+		Der Inputprozess (Abbildung \ref{fig:ProzessInput}) liest die Protokolldatei ein und selektiert nach den beiden Datentypen \textit{STADIS} und \textit{XML}.
+		Nach der Selektion der Typen läuft der Prozess in dem Strang des jeweiligen Typen weiter.
+		\begin{figure}[htbp]
+			\TikZGraphic{./Abschnitte/Prozessmodellierung/ProzessInput.tikz.tex}
+			\caption{Ablauf des Inputs}
+			\label{fig:ProzessInput}
+		\end{figure}
+	\subsection{Prozesse 
+	 STADIS Extraktion}
+		Vor der Extraktion der Datensätze ist es notwendig, dass SAS eine STADIS Bibliothek erstellt.
+		Diese ist mit Referenzen auf STADIS-Datensätzen gefüllt.
+		Der Prozess des Einlesens einer STADIS-Datei in SAS (Prozess in Abbildung \ref{fig:ProzessExtraktionStadis}) greift partiell auf diese STADIS-Bibliothek zu.
+		Die im Kapitel \ref{sec:Datenmodellierung} herausgearbeiteten STADIS Abschnitte werden nacheinander eingelesen.
+		Definiert sind diese als SAS-Base Code.
+		
+		Hierbei wird der erste Datenabschnitt auf einen Satztyp überprüft, welcher im Kapitel \ref{sec:Datenmodellierung} dargestellt wurde.
+		Sollte der Datensatz dieser Prüfung gerecht werden, wird der Satz nach den einzelnen Abschnitten selektiert und gespeichert.
+		Dieser Vorgang wiederholt sich bis zum Ende der Datei, bzw. bis kein weiterer STADIS-Datensatz mehr vorhanden ist.
+		Falls ein Datensatz nicht nach dem gefordertem Satztyp aufgebaut ist, hat dieser keine Relevanz und wird verworfen.
+				
+		\begin{figure}[htbp]
+				\TikZGraphic{./Abschnitte/Prozessmodellierung/ProzessExtraktionStadis.tikz.tex}
+				\caption{Ablauf Extraktion von STADIS-Daten}
+				\label{fig:ProzessExtraktionStadis}
+		\end{figure}
+	\subsection{STADIS Transformation in ein SAS Datenmodell}
+	
+		Im Kapitel Datenmodellierung wurde ein Datenmodell erarbeitet, welches abstrakt alle Daten beschreibt, welche für das Projekt relevant sind.
+		Dieses zentrale Datenmodell steht dem Transformationsprozess der STADIS Datensätze zur Verfügung.
+		Ziel des Prozesses ist es die zu Grunde liegenden Datensätze in dieses Modell einzupflegen.
+		Das Datenmodell mit den eingepflegten Daten stellt das Datawarehouse dar.
+		
+		Transformiert wird der Output des Extraktionsprozess. 
+		Bei diesem Prozess werden die Daten direkt den Tabellen des zentralen Modells zugeordnet.
+		Innerhalb dessen werden keine weiteren Einschränkungen gegenüber den Daten der STADIS-Datensätze vorgenommen.
+		
+	\subsection{Erstellung einer XML-Map}
+		Für die Bearbeitung und Extraktion einer XML-Datei wird eine XML-Map benötigt. 
+		Diese muss für den zukünftigen Prozessablauf lediglich ein einziges Mal erstellt werden, da sich die XML-Struktur nicht verändert.
+		Im Falle einer Änderung innerhalb der Struktur, muss die Map jedoch nochmals erstellt werden.
+		
+		Mit Hilfe des SAS XML Mapper lässt sich eine Map der XML-Datei erstellen. 
+		SAS visualisiert diese Map als Baumstruktur der XML-Datei.
+		Durch eine händische Selektion der Äste lässt sich definieren, welche Datensätze aus den einzelnen Dateien relevant sind. 
+		Für die spätere Bearbeitung, benötigt die Map eine Referenz innerhalb des SAS Programms.
+		 
+	\subsection{Extraktion der XML}\label{sec:ExtraktionXML}
+		SAS ist es möglich mit Hilfe bestimmter Engines SAS konforme Bibliotheken zu erstellen (vgl. Kapitel \ref{sec:SASEngine}).
+		Diese werden mit Referenzen auf eine Quelle gefüllt, mit denen SAS arbeitet.
+		Im Fall einer XML-Extraktion wird eine SAS interne XML-Engine benötigt.
+		Mit dieser Engine wird eine Referenzbibliothek erstellt, die in eine XML-Bibliothek überführt werden kann.
+		
+		Um die Extraktion und auch das Erstellen einer Referenzbibliothek einzuleiten, benötigt SAS-Base eine Dateireferenzierung auf die Map und die XML-Datei.
+		Diese Ermöglicht den Zugriff auf die Dateien, da diese nicht direkt in SAS eingepflegt werden können.
+		
+		Bei der Extraktion wird die Baumstruktur der Referenzbibliothek mit der Struktur der XML-Map verglichen.
+		Da die Map auf bestimmte Felder referenziert, werden nur diese in eine XML-Bibliothek geschrieben.
+		Die Map überprüft nun Satz für Satz der Referenzbibliothek auf eine Referenzierung.
+		Sollte dieser Fall zutreffen wird der Datensatz in die XML-Bibliothek übertragen.
+		Die Prüfungen werden solange durchgeführt bis kein XML-Datensatz in der Referenz mehr vorhanden ist.
+		
+		Nach Abschluss der Extraktion sind innerhalb der XML-Bibliothek sechzehn Tabellen hinterlegt.
+		In diesen sind nun die relevanten Datensätze der referenzierten Datei erfasst.
+		\begin{figure}[htbp]
+			\TikZGraphic{./Abschnitte/Prozessmodellierung/ProzessExtraktionXML.tikz.tex}
+			\caption{Ablauf Extraktion von XML-Daten}
+			\label{fig:ProzessExtraktionXML}
+		\end{figure}
+	\subsection{Transformation in ein SAS Datenmodell}
+		Der Prozess des Transformieren greift auf die XML-Bibliothek zurück, die im Prozess der XML-Extraktion (Kapitel \ref{sec:ExtraktionXML}) entstanden ist.
+		Ziel ist es die sechzehn Tabellen der XML-Bibliothek in das zentrale Datenmodell zu überführen.
+		Dieses ist weniger komplex als die XML-Bibliothek, da sie lediglich aus vier Tabellen besteht (beschrieben in Kapitel \ref{sec:Datenmodellierung}).
+		Durch diese Tatsache wird der Prozessschritt erschwert.
+		
+		Die Schwierigkeit besteht darin alle Elemente der Bibliothek dem zentralen Modell richtig zuzuordnen.
+		Hierzu müssen die Informationen in der XML-Datei korrekt interpretiert werden und die Elemente des Modells eindeutig zuzuweisen sein.
+		Zielführend ist eine Implementation in SAS-Base Code, die konkret beschreibt welche Datensätze der Bibliothek welche Elemente des zentralen Modells beschreiben.
+	
+	\subsection{Laden in ein Datawarehouse}
+		Das zentrale Datenmodell liegt nun in zweifacher Ausführung vor.
+		Beide Modelle werden in das Datawarehouse eingepflegt und liegen dort getrennt vor.
+		Zum Einem gefüllt mit XML-Datensätzen und zum Anderen gespeist mit STADIS-Datensätzen.
+		Da beide Datenbanken nach demselben Datenmodell aufgebaut sind, ist der Join der beiden Datenbanken durch wenige Anweisungen zu realisieren.
+		Auf Grund dessen kann die Analyse entweder über beide Inhalte gleichzeitig oder über die einzelnen Datenbanken der Datentypen zusammen laufen.
