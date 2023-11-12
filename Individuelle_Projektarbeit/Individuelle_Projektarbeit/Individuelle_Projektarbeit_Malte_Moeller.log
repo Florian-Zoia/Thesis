@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.11)  3 NOV 2023 10:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.11)  12 NOV 2023 23:27
 entering extended mode
 **./Individuelle_Projektarbeit_Malte_Moeller.tex
 (Individuelle_Projektarbeit_Malte_Moeller.tex
@@ -1332,12 +1332,12 @@ LaTeX Font Info:    Trying to load font information for U+txsyc on input line 9
 ("C:\Program Files\MiKTeX 2.9\tex/latex/txfonts\utxsyc.fd"
 File: utxsyc.fd 2000/12/15 v3.1
 )
-<ComLogo.png, id=85, 237.5274pt x 111.0549pt>
+<ComLogo.png, id=77, 237.5274pt x 111.0549pt>
 File: ComLogo.png Graphic file (type png)
 <use ComLogo.png>
 Package pdftex.def Info: ComLogo.png  used on input line 99.
 (pdftex.def)             Requested size: 178.1451pt x 83.29095pt.
-<ProvadisLogo.png, id=87, 626.34pt x 261.97874pt>
+<ProvadisLogo.png, id=79, 626.34pt x 261.97874pt>
 File: ProvadisLogo.png Graphic file (type png)
 <use ProvadisLogo.png>
 Package pdftex.def Info: ProvadisLogo.png  used on input line 99.
@@ -1354,17 +1354,18 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.140 \newpage
-               [1] [2]
+l.134 \subsection
+                 {Supervised Learning} [1]
 LaTeX Font Info:    Trying to load font information for TS1+txr on input line 1
-56.
- ("C:\Program Files\MiKTeX 2.9\tex/latex/txfonts\ts1txr.fd"
-File: ts1txr.fd 2000/12/15 v3.1
-) [3] [4]
-LaTeX Font Info:    Font shape `T1/txr/b/n' in size <12> not available
-(Font)              Font shape `T1/txr/bx/n' tried instead on input line 197.
+53.
 
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 227--228
+("C:\Program Files\MiKTeX 2.9\tex/latex/txfonts\ts1txr.fd"
+File: ts1txr.fd 2000/12/15 v3.1
+) [2] [3]
+LaTeX Font Info:    Font shape `T1/txr/b/n' in size <12> not available
+(Font)              Font shape `T1/txr/bx/n' tried instead on input line 193.
+
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 223--224
 [][] 
  []
 
@@ -1379,25 +1380,25 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-) [5]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 256.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 256.
+) [4]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 252.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 252.
  (Individuelle_Projektarbeit_Malte_Moeller.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 256.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 256.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 252.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 252.
 Package rerunfilecheck Info: File `Individuelle_Projektarbeit_Malte_Moeller.out
 ' has not changed.
-(rerunfilecheck)             Checksum: FA94EFAE7E37949DA91AB209800206F8;864.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 256.
+(rerunfilecheck)             Checksum: 016AF752C12FE8C76A960EB83511E1EC;747.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 252.
  ) 
 Here is how much of TeX's memory you used:
- 28416 strings out of 480930
- 545199 string characters out of 2909553
+ 28411 strings out of 480930
+ 545133 string characters out of 2909553
  839800 words of memory out of 3000000
- 43559 multiletter control sequences out of 15000+200000
+ 43557 multiletter control sequences out of 15000+200000
  580501 words of font info for 115 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,9n,82p,476b,406s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,9n,82p,490b,408s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/txfonts/rtcxr.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/public/txfonts/rtxb.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
@@ -1406,10 +1407,10 @@ pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/f
 onts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/ti
 mes/utmri8a.pfb>
-Output written on Individuelle_Projektarbeit_Malte_Moeller.pdf (6 pages, 149950
+Output written on Individuelle_Projektarbeit_Malte_Moeller.pdf (5 pages, 148117
  bytes).
 PDF statistics:
- 179 PDF objects out of 1000 (max. 8388607)
- 38 named destinations out of 1000 (max. 500000)
- 231 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 164 PDF objects out of 1000 (max. 8388607)
+ 35 named destinations out of 1000 (max. 500000)
+ 215 words of extra memory for PDF output out of 10000 (max. 10000000)
 
